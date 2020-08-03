@@ -5,13 +5,20 @@ import "../styles/App.css";
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
 import Logout from "./auth/Logout";
+
 import OfferDetails from "./Offer/OfferDetails";
+
+import AllOffers from "./Offer/AllOffers";
+
 
 function App() {
   return (
     <div>
       <OfferDetails />
       <h1>TESTE</h1>
+      <div>
+        <AllOffers></AllOffers>
+      </div>
     </div>
   );
   // const [loggedInUser, setLoggedInUser] = useState({});
