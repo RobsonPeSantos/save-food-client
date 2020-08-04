@@ -12,10 +12,7 @@ import AllOffers from "./Offer/AllOffers";
 import OfferDetails from "./Offer/OfferDetails";  
 
 
-
-
 function App() {
-
   const [loggedInUser, setLoggedInUser] = useState({});
 
   useEffect(() => {
@@ -29,9 +26,8 @@ function App() {
         <h1>TEST</h1>
         <Switch>
           <Route path="/offers" exact component={AllOffers} user={""} />
-          <Route path='/offer/:id' component={OfferDetails} />
-    <Route path='/user/:id/create' component={AddOffer} />
-
+          <Route path="/offer/:id" component={OfferDetails} />
+          <Route path="/user/:id/create" component={AddOffer} />
         </Switch>
       </div>
     </BrowserRouter>
