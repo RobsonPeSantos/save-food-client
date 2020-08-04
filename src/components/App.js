@@ -9,7 +9,9 @@ import Logout from "./auth/Logout";
 
 import AddOffer from "./Offer/AddOffer";
 import AllOffers from "./Offer/AllOffers";
-import OfferDetails from "./Offer/OfferDetails";
+
+import OfferDetails from "./Offer/OfferDetails";  
+
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -41,7 +43,7 @@ function App() {
           <Route path="/offers" exact component={AllOffers} user={""} />
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
-          
+ 
         </Switch>
       </div>
     </BrowserRouter>
