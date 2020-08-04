@@ -80,7 +80,6 @@ const AllOffers = () => {
       </tbody>
     </div>
   );
-
 };
 
 export default AllOffers;
