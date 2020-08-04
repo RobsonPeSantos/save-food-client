@@ -16,19 +16,24 @@ const FormOffer = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      {/* <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div> */}
+
       <div className="form-group">
         <label htmlFor="exampleInputEmail1">Title</label>
         <input
           type="text"
           className="form-control form-control-lg"
-          id="taskTitleField"
+          id="offerTitleField"
           name="title"
           aria-describedby="emailHelp"
           onChange={handleChange}
           value={props.offer.title}
         />
       </div>
-      <div className="form-group">
+      {/* <div className="form-group">
         <label htmlFor="exampleInputPassword1">Description</label>
         <textarea
           className="form-control form-control-lg"
@@ -37,7 +42,7 @@ const FormOffer = (props) => {
           onChange={handleChange}
           value={props.offer.description}
         />
-      </div>
+      </div> */}
       <button type="submit" className="btn btn-lg btn-primary">
         Save
       </button>

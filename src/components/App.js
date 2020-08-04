@@ -5,17 +5,27 @@ import "../styles/App.css";
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
 import Logout from "./auth/Logout";
+
 import AddOffer from "./Offer/AddOffer";
 import FormOffer from "./Offer/FormOffer";
 
+import AllOffers from "./Offer/AllOffers";
+
+
 function App() {
-  return (
-    <div>
-      {/* <AddOffer />
-      <h1>TESTE</h1>
-      <FormOffer /> */}
-    </div>
-  );
+//   return (
+//     <div>
+
+//       <AddOffer />
+//       <h1>TESTE</h1>
+// {/* 
+//       <FormOffer />
+//        <div>
+//         <AllOffers></AllOffers>
+//       </div> */}
+
+//     </div>
+//   );
   // const [loggedInUser, setLoggedInUser] = useState({});
 
   // useEffect(() => {
@@ -23,26 +33,17 @@ function App() {
   //   setLoggedInUser({ ...storedUser });
   // }, []);
 
-  // return (
+  return (
 
-  //   <BrowserRouter>
-  //     <div>
-  //       <Switch>
-  //         <Route path='/user/signup' component={Signup} />
-  //         <Route
-  //           path='/user/login'
-  //           render={() => (
-  //             <Login user={loggedInUser} setUser={setLoggedInUser} />
-  //           )}
-  //         />
-  //         <Route
-  //           path='/user/logout'
-  //           render={() => <Logout setUser={setLoggedInUser} />}
-  //         />
-  //       </Switch>
-  //     </div>
-  //   </BrowserRouter>
-  // );
+    <BrowserRouter>
+      <div>
+        <Switch>
+          <Route path='/user/:id/create' component={AddOffer} />
+          
+        </Switch>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
