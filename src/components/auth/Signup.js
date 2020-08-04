@@ -15,7 +15,7 @@ const Signup = () => {
       // Colocando uma string em branco como URL, pois os dados que queremos inserir via POST sao sempre o segundo parametro do metodo "post" do Axios
       const result = await authApi.post("/user/signup", data);
 
-      // Redirecionar de volta para lista de Projetos
+      // Redirecionar para lista Login
       history.push("/user/login");
     } catch (err) {
       console.error(err);
