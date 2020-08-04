@@ -18,8 +18,6 @@ const OfferDetails = () => {
     owner: "",
   });
 
-  
-
   const [user, setUser] = useState({
     companyName: "",
     category: "",
@@ -71,7 +69,7 @@ const OfferDetails = () => {
 
       <hr />
 
-      <div className='offerDetailsContainer'>
+      <div className='border border-primary'>
         <div className='offerCard'>
           <div className='offerImage'>
             <img src='' alt='offer' />
