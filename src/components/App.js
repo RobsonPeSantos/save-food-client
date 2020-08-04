@@ -8,8 +8,9 @@ import Login from "./auth/Login";
 import Logout from "./auth/Logout";
 
 import AddOffer from "./Offer/AddOffer";
-import AllOffers from "./offer/AllOffers";
-import OfferDetails from "./Offer/OfferDetails";
+import AllOffers from "./Offer/AllOffers";
+import OfferDetails from "./Offer/OfferDetails";  
+
 
 
 
