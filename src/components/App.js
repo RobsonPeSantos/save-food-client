@@ -3,10 +3,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-// import Signup from "./auth/Signup";
-// import Login from "./auth/Login";
-// import Logout from "./auth/Logout";
+import Signup from "./auth/Signup";
+import Login from "./auth/Login";
+import Logout from "./auth/Logout";
 import AllOffers from "./offer/AllOffers";
+import OfferDetails from "./Offer/OfferDetails";
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -19,9 +20,10 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        |<h1>TEST</h1>
+        <h1>TEST</h1>
         <Switch>
           <Route path="/offers" exact component={AllOffers} user={""} />
+          <Route path='/offer/:id' component={OfferDetails} />
         </Switch>
       </div>
     </BrowserRouter>
