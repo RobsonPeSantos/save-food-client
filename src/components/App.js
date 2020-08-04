@@ -8,18 +8,18 @@ import Logout from "./auth/Logout";
 
 import OfferDetails from "./Offer/OfferDetails";
 
-import AllOffers from "./Offer/AllOffers";
-
+// import AllOffers from "./Offer/AllOffers";
 
 function App() {
   return (
-    <div>
-      <OfferDetails />
-      <h1>TESTE</h1>
+    <BrowserRouter>
       <div>
-        <AllOffers></AllOffers>
+        <Switch>
+          <Route path='/offer/:id' component={OfferDetails} />
+
+        </Switch>
       </div>
-    </div>
+    </BrowserRouter>
   );
   // const [loggedInUser, setLoggedInUser] = useState({});
 

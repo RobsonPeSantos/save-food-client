@@ -70,7 +70,7 @@ const AllOffers = () => {
       </table>
     </div>
   );
-  );
+  
 };
 
 export default AllOffers;
