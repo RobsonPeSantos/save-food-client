@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid gray;
-  max-width: 12rem;
+  width: 15rem;
   padding: 2rem;
 }
 
@@ -23,6 +24,21 @@
   justify-content: space-around;
   margin: 2rem;
   padding: 1rem;
+}
+
+
+.offerImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offerImage img {
+  width: 13rem;
+}
+
+.establishmentImage img {
+  width: 13rem;
 }
 
 /* All Offers */
@@ -94,3 +110,4 @@ button:hover {
   position: relative;
   background-image: url(https://thumbs.dreamstime.com/z/fundo-saud-vel-do-alimento-dos-frutos-vegetais-cereal-das-porcas-e-superfood-vegetariano-diet-tico-equilibrado-que-come-produtos-143677456.jpg);
 }
+
