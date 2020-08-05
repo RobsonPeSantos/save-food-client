@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
@@ -13,6 +13,7 @@ import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
+import EditOffer from "./Offer/EditOffer";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile"
 
@@ -71,6 +72,7 @@ function App() {
           />
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
+          <Route path="/offer/update/:id" component={EditOffer} />
           <Route path="/blog" component={aboutUs} />
           <Route path="establishment/profile" component={EstablishmentProfile}/>
         </Switch>
