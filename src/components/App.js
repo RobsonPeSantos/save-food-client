@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
-// import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
@@ -9,8 +9,9 @@ import Logout from "./auth/Logout";
 
 import AddOffer from "./Offer/AddOffer";
 import AllOffers from "./Offer/AllOffers";
-
-import OfferDetails from "./Offer/OfferDetails";  
+import OfferDetails from "./Offer/OfferDetails";
+import Navbar from "./navbar/Navbar";
+import aboutUs from "./blog/aboutUs";
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1>TEST</h1>
+        <Navbar></Navbar>
         <Switch>
         <Route path="/user/signup" exact component={Signup} />
           <Route
@@ -43,6 +44,7 @@ function App() {
           <Route path="/offers" exact component={AllOffers} user={""} />
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
+          <Route path="/blog" component={aboutUs}/>
  
         </Switch>
       </div>
