@@ -10,10 +10,10 @@ const AddOffer = () => {
 
   const [offer, setOffer] = useState({
     title: "",
-    value: "",
+    value: 0,
     active: "",
     photo: "",
-    availableQty: "",
+    availableQty: 0,
     reservationLimitPeriod: "",
     owner: ""
   });
@@ -21,11 +21,16 @@ const AddOffer = () => {
 
   function handleChange(event){
     setOffer({...offer,[event.currentTarget.name]: event.currentTarget.value})
-  }
+    console.log(event.currentTarget.value)  }
+    
 
-  async function handleSubmit(data) {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    // console.log(data)
+    // handleSubmit(data)
+    
     try {
-      const result = await offersApi.post("/offer/create", data);
+      const result = await offersApi.post("/offer/create", offer);
 
       history.push(`/offers`);
     } catch (err) {
@@ -34,12 +39,14 @@ const AddOffer = () => {
   }
 
   return ( 
+    <div><h1>Cadastrar oferta</h1>
+    <hr className = "form-group"></hr>
     <form onSubmit={handleSubmit}>
       <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Title</label>
+        <label htmlFor="nomePrato">Nome do Prato (title)</label>
         <input
           type="text"
-          className="form-control form-control-lg"
+          className="form-control form-control-lg col-5"
           id="offerTitleField"
           name="title"
           aria-describedby="emailHelp"
@@ -48,9 +55,9 @@ const AddOffer = () => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="exampleInputPassword1">Value</label>
-        <textarea
-          className="form-control form-control-lg"
+        <label htmlFor="valorPrato">Valor do prato (Value)</label>
+        <input
+          className="form-control form-control-lg col-5"
           name="value"
           id="offerValueField"
           onChange={handleChange}
@@ -58,34 +65,35 @@ const AddOffer = () => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Photo</label>
+      <label htmlFor="quantidadeDisp">Quantidade Disponível</label>
+        <input
+          className="form-control form-control-lg col-5"
+          name="availableQty"
+          id="offerValueField"
+          onChange={handleChange}
+          value={offer.availableQty}
+        />
+        </div>
+        <div>
+          <input type="date" />
+        </div>
+        <div className="form-group">
+        <label htmlFor="fotoPrato">Foto do Prato (photo)</label>
         <input
           type="text"
-          className="form-control form-control-lg"
-          id="offerTitleField"
+          className="form-control form-control-lg col-5"
+          id="offerPhotoField"
           name="photo"
           aria-describedby="emailHelp"
           onChange={handleChange}
           value={offer.photo}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="exampleInputEmail1">availableQty</label>
-        <input
-          type="text"
-          className="form-control form-control-lg"
-          id="qtyTitleField"
-          name="photo"
-          aria-describedby="emailHelp"
-          onChange={handleChange}
-          value={offer.availableQty}
-        />
-      </div>
-      
       <button type="submit" className="btn btn-lg btn-primary">
         Save
       </button>
     </form>
+    </div>
   )
 };
 
