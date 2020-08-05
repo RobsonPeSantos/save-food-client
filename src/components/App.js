@@ -13,7 +13,11 @@ import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
+
 import EstablishmentProfile from "./establishment/EstablishmentProfile"
+
+
+import offersApi from "../apis/offers";
 
 
 function App() {
@@ -24,11 +28,25 @@ function App() {
     setLoggedInUser({ ...storedUser });
   }, []);
 
+  const [offers, setOffers] = useState([]);
+
+  useEffect(() => {
+    (async function fetchOffers() {
+      try {
+        const result = await offersApi.get("/offers");
+        console.log(result);
+
+        setOffers([...result.data]);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, []);
+
   return (
     <BrowserRouter>
       <div>
-
-        <Navbar></Navbar>
+        <Navbar offers={offers} setOffers={setOffers}></Navbar>
 
         <Switch>
           <Route path="/home" component={Home} />
@@ -45,7 +63,12 @@ function App() {
             exact
             render={() => <Logout setUser={setLoggedInUser} />}
           />
-          <Route path="/offers" exact component={AllOffers} user={""} />
+          <Route
+            path="/offers"
+            render={() => <AllOffers offers={offers} setOffers={setOffers} />}
+            exact
+            user={""}
+          />
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/blog" component={aboutUs} />
