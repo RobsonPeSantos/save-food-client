@@ -11,9 +11,11 @@ const Login = (props) => {
   async function handleSubmit(data) {
     try {
       const result = await authApi.post("/user/login", data);
+      console.log("tentativa de login")
       props.setUser({ ...result.data });
+      console.log("pos setUser Props")
       localStorage.setItem("loggedInUser", JSON.stringify({ ...result.data }));
-      history.push("/");
+      history.push("/offers");
     } catch (err) {
       console.error(err);
     }
