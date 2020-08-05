@@ -16,6 +16,7 @@ import aboutUs from "./blog/aboutUs";
 import EditOffer from "./Offer/EditOffer";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
+import EditEstablishment from "./establishment/EditEstablishment"
 
 import offersApi from "../apis/offers";
 
@@ -87,6 +88,7 @@ function App() {
           <Route path="/offer/update/:id" component={EditOffer} />
           <Route path="/blog" component={aboutUs} />
           <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
+          <Route path="/establishment/profile/update/:id" component={EditEstablishment}/>
           
 
         </Switch>

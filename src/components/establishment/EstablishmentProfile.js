@@ -39,15 +39,15 @@ const EstablishmentProfile = () => {
 
   return (
     <div>
-        <div className="profileMenu">
+      <div className='profileMenu'>
         <p>
-        <h2>Perfil</h2>
-      </p>
-      <Link to={`/establishment/profile/update/${id}`}>Editar</Link> | <Link to={`/establishment/${id}`}>Minhas Ofertas</Link> 
-      <hr />
-        </div>
-      
-      
+          <h2>Perfil</h2>
+        </p>
+        <Link to={`/establishment/profile/update/${id}`}>Editar</Link> |{" "}
+        <Link to={`/establishment/${id}`}>Minhas Ofertas</Link>
+        <hr />
+      </div>
+
       <div className='establishmentProfileContainer'>
         <div className='establishmentProfile'>
           <div className='establishmentImage'>
@@ -62,8 +62,8 @@ const EstablishmentProfile = () => {
           <div className='establishmentData'>
             <p>
               {" "}
-              {user.address.street}, {user.address.number} 
-              <p>{user.address.neighborhood}</p> 
+              {user.address.street}, {user.address.number}
+              <p>{user.address.neighborhood}</p>
             </p>
             <p> {user.phone}</p>
             <p> {user.email}</p>
@@ -73,7 +73,7 @@ const EstablishmentProfile = () => {
         <div className='greetingProfileContainer'>
           <p>
             {" "}
-            <h1>Olá, {user.companyName}</h1>{" "}
+            <h1>Olá, {user.companyName}! </h1>{" "}
           </p>
           <p>Categoria: {user.category}</p>
           <p>Cozinha: {user.cuisine}</p>
