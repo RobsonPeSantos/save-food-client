@@ -15,6 +15,7 @@ import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
 import howWorks from "./blog/howWorks";
 import EditOffer from "./Offer/EditOffer";
+import DeleteOffer from "./Offer/DeleteOffer";
 import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
@@ -85,8 +86,22 @@ function App() {
             exact
             user={""}
           />
-          <Route path="/offer/create" component={AddOffer} />
+          <Route
+            path="/offer/create"
+            render={() => <AddOffer offers={offers} setOffers={setOffers} />}
+          />
           <Route path="/offer/:id" exact component={OfferDetails} />
+          <Route
+            path="/offer/update/:id"
+            render={() => <EditOffer offers={offers} setOffers={setOffers} />}
+          />
+          <Route path="/blog" component={aboutUs} />
+          <Route
+            path="/offer/delete/:id"
+            exact
+            render={() => <DeleteOffer offers={offers} setOffers={setOffers} />}
+          />
+
           <Route path="/offer/update/:id" component={EditOffer} />
 
          

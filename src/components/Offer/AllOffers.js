@@ -24,6 +24,9 @@ const AllOffers = (props) => {
               <Link type="button" className="button" to={`offer/${offer._id}`}>
                 RESERVAR
               </Link>
+              {/* <Link type="button" className="button" to={`offer/delete/${offer._id}`}>
+                Deletar
+              </Link> */}
             </div>
           </div>
         ))}

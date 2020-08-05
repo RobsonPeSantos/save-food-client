@@ -33,6 +33,7 @@ const AddOffer = () => {
       const result = await offersApi.post("/offer/create", offer);
 
       history.push(`/offers`);
+      history.go();
     } catch (err) {
       console.error(err);
     }
