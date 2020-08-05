@@ -54,7 +54,7 @@ const OfferDetails = () => {
           `/establishment/profile/${offer.owner}`
         );
 
-        setUser({ ...result.data.estabilishment });
+        setUser({ ...result.data.establishment });
         
       } catch (error) {
         console.log(error);

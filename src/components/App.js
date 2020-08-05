@@ -72,7 +72,7 @@ function App() {
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/blog" component={aboutUs} />
-          <Route path="establishment/profile" component={EstablishmentProfile}/>
+          <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
         </Switch>
       </div>
     </BrowserRouter>
