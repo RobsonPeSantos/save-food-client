@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { useHistory, Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import Form from "../navbar/Form";
 
 const AllOffers = (props) => {
-  const history = useHistory();
-
   return (
     <div>
-      <Form offers={props.offers} setOffers={props.setOffers}></Form>
+      <Form
+        allOffers={props.allOffers}
+        offers={props.offers}
+        setOffers={props.setOffers}
+      ></Form>
       <div className="offersBody">
         {props.offers.map((offer) => (
           <div className="container" key={offer._id}>

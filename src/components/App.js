@@ -14,11 +14,11 @@ import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
 
-import EstablishmentProfile from "./establishment/EstablishmentProfile"
-
+import EstablishmentProfile from "./establishment/EstablishmentProfile";
 
 import offersApi from "../apis/offers";
 
+let backup = [];
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -37,6 +37,7 @@ function App() {
         console.log(result);
 
         setOffers([...result.data]);
+        backup = [...result.data];
       } catch (err) {
         console.log(err);
       }
@@ -49,7 +50,12 @@ function App() {
         <Navbar offers={offers} setOffers={setOffers}></Navbar>
 
         <Switch>
-          <Route path="/home" component={Home} />
+          <Route
+            path="/home"
+            render={() => (
+              <Home allOffers={backup} offers={offers} setOffers={setOffers} />
+            )}
+          />
           <Route path="/user/signup" exact component={Signup} />
           <Route
             path="/user/login"
@@ -65,14 +71,23 @@ function App() {
           />
           <Route
             path="/offers"
-            render={() => <AllOffers offers={offers} setOffers={setOffers} />}
+            render={() => (
+              <AllOffers
+                allOffers={backup}
+                offers={offers}
+                setOffers={setOffers}
+              />
+            )}
             exact
             user={""}
           />
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/blog" component={aboutUs} />
-          <Route path="establishment/profile" component={EstablishmentProfile}/>
+          <Route
+            path="establishment/profile"
+            component={EstablishmentProfile}
+          />
         </Switch>
       </div>
     </BrowserRouter>
