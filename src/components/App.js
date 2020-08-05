@@ -13,6 +13,8 @@ import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
+import EstablishmentProfile from "./establishment/EstablishmentProfile"
+
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -47,6 +49,7 @@ function App() {
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/blog" component={aboutUs} />
+          <Route path="establishment/profile" component={EstablishmentProfile}/>
         </Switch>
       </div>
     </BrowserRouter>
