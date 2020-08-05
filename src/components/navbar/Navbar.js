@@ -1,11 +1,7 @@
-import React, { useReducer } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import AuthForm from "../auth/AuthForm";
-import aboutUs from "../../components/blog/aboutUs";
-import howWorks from "../../components/blog/howWorks";
-import Form from "../navbar/Form";
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,6 +34,11 @@ const Navbar = (props) => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/blog/aboutUs">
+                Como funciona
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog/howWorks">
                 Quem somos
               </Link>
             </li>
