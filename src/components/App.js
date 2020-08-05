@@ -11,8 +11,8 @@ import AddOffer from "./Offer/AddOffer";
 import AllOffers from "./Offer/AllOffers";
 import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
+import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
-
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -27,7 +27,8 @@ function App() {
       <div>
         <Navbar></Navbar>
         <Switch>
-        <Route path="/user/signup" exact component={Signup} />
+          <Route path="/home" component={Home} />
+          <Route path="/user/signup" exact component={Signup} />
           <Route
             path="/user/login"
             exact
@@ -40,12 +41,10 @@ function App() {
             exact
             render={() => <Logout setUser={setLoggedInUser} />}
           />
-          
           <Route path="/offers" exact component={AllOffers} user={""} />
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
-          <Route path="/blog" component={aboutUs}/>
- 
+          <Route path="/blog" component={aboutUs} />
         </Switch>
       </div>
     </BrowserRouter>
