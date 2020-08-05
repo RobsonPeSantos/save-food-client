@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
 import offersApi from "../../apis/offers";
 import OfferDetails from "./OfferDetails";
+import Navbar from "../navbar/Navbar";
 
 const AllOffers = () => {
   const history = useHistory();
@@ -25,17 +26,15 @@ const AllOffers = () => {
     <div className="offersBody">
       {offers.map((offer) => (
         <div className="container">
-          <div className="img-container">{offer.photo}</div>
+          <div className="img-container">
+            <img className="photo" src={offer.photo} alt="foodPhoto"></img>
+          </div>
           <div className="content">
-            <h3>{offer.title}</h3>
-            <p>{offer.value}</p>
+            <h2>{offer.title}</h2>
+            <p>{`R$ ${offer.value}`}</p>
             <p>{offer.owner}</p>
-            <Link
-              type="button"
-              className="btn btn-sm btn-warning mr-2"
-              to={`offer/${offer._id}`}
-            >
-              Reserva
+            <Link type="button" className="button" to={`offer/${offer._id}`}>
+              RESERVAR
             </Link>
           </div>
         </div>
