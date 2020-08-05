@@ -14,6 +14,7 @@ import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
 import EditOffer from "./Offer/EditOffer";
+import DeleteOffer from "./Offer/DeleteOffer";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
 
@@ -82,13 +83,26 @@ function App() {
             exact
             user={""}
           />
-          <Route path="/offer/create" component={AddOffer} />
+          <Route
+            path="/offer/create"
+            render={() => <AddOffer offers={offers} setOffers={setOffers} />}
+          />
           <Route path="/offer/:id" exact component={OfferDetails} />
-          <Route path="/offer/update/:id" component={EditOffer} />
+          <Route
+            path="/offer/update/:id"
+            render={() => <EditOffer offers={offers} setOffers={setOffers} />}
+          />
           <Route path="/blog" component={aboutUs} />
+          <Route
+            path="/offer/delete/:id"
+            exact
+            render={() => <DeleteOffer offers={offers} setOffers={setOffers} />}
+          />
 
-          <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
-
+          <Route
+            path="/establishment/profile/:id"
+            component={EstablishmentProfile}
+          />
         </Switch>
       </div>
     </BrowserRouter>

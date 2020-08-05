@@ -42,11 +42,12 @@ const EditOffer = () => {
       const result = await offersApi.put(`/offer/update/${id}`, offer);
       console.log(result)
       history.push(`/offer/${id}`);
+      history.go();
     } catch (err) {
       console.error(err);
     }
   }
-
+ 
   return (
     <div><h1>Editar Oferta</h1>
     <hr className = "form-group"></hr>
