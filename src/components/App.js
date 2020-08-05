@@ -18,6 +18,7 @@ import EditOffer from "./Offer/EditOffer";
 import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
+import EditEstablishment from "./establishment/EditEstablishment"
 
 import offersApi from "../apis/offers";
 
@@ -90,6 +91,7 @@ function App() {
 
          
           <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
+          <Route path="/establishment/profile/update/:id" component={EditEstablishment}/>
           
 
           <Route path="/blog/aboutUs" component={aboutUs} />

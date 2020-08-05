@@ -73,7 +73,7 @@ const EstablishmentProfile = () => {
         <div className="greetingProfileContainer">
           <p>
             {" "}
-            <h1>Olá, {user.companyName}</h1>{" "}
+            <h1>Olá, {user.companyName}! </h1>{" "}
           </p>
           <p>Categoria: {user.category}</p>
           <p>Cozinha: {user.cuisine}</p>
