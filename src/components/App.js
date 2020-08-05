@@ -22,7 +22,6 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1>TEST</h1>
         <Switch>
         <Route path="/user/signup" exact component={Signup} />
           <Route
