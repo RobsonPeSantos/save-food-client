@@ -87,8 +87,14 @@ function App() {
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/offer/update/:id" component={EditOffer} />
+
+         
+          <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
+          
+
           <Route path="/blog/aboutUs" component={aboutUs} />
           <Route path="/blog/howWorks" component={howWorks} />
+
 
           <Route
             path="/establishment/profile/:id"
