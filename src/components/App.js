@@ -13,7 +13,9 @@ import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
+import howWorks from "./blog/howWorks";
 import EditOffer from "./Offer/EditOffer";
+import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
 
@@ -85,10 +87,25 @@ function App() {
           <Route path="/offer/create" component={AddOffer} />
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/offer/update/:id" component={EditOffer} />
-          <Route path="/blog" component={aboutUs} />
+
+         
           <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
           
 
+          <Route path="/blog/aboutUs" component={aboutUs} />
+          <Route path="/blog/howWorks" component={howWorks} />
+
+
+          <Route
+            path="/establishment/profile/:id"
+            component={EstablishmentProfile}
+          />
+          <Route
+            path="/establishment/profile/offers/:id"
+            exact
+            component={EstablishmentOffers}
+            user={loggedInUser}
+          />
         </Switch>
       </div>
     </BrowserRouter>
