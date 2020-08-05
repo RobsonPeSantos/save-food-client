@@ -86,8 +86,8 @@ function App() {
           <Route path="/offer/:id" exact component={OfferDetails} />
           <Route path="/offer/update/:id" component={EditOffer} />
           <Route path="/blog" component={aboutUs} />
-
           <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
+          
 
         </Switch>
       </div>
