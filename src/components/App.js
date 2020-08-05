@@ -13,10 +13,13 @@ import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
 import aboutUs from "./blog/aboutUs";
+import howWorks from "./blog/howWorks";
 import EditOffer from "./Offer/EditOffer";
 import DeleteOffer from "./Offer/DeleteOffer";
+import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
+import EditEstablishment from "./establishment/EditEstablishment"
 
 import offersApi from "../apis/offers";
 
@@ -99,9 +102,26 @@ function App() {
             render={() => <DeleteOffer offers={offers} setOffers={setOffers} />}
           />
 
+          <Route path="/offer/update/:id" component={EditOffer} />
+
+         
+          <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
+          <Route path="/establishment/profile/update/:id" component={EditEstablishment}/>
+          
+
+          <Route path="/blog/aboutUs" component={aboutUs} />
+          <Route path="/blog/howWorks" component={howWorks} />
+
+
           <Route
             path="/establishment/profile/:id"
             component={EstablishmentProfile}
+          />
+          <Route
+            path="/establishment/profile/offers/:id"
+            exact
+            component={EstablishmentOffers}
+            user={loggedInUser}
           />
         </Switch>
       </div>
