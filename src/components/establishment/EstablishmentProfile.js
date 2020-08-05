@@ -39,27 +39,27 @@ const EstablishmentProfile = () => {
 
   return (
     <div>
-      <div className='profileMenu'>
+      <div className="profileMenu">
         <p>
           <h2>Perfil</h2>
         </p>
         <Link to={`/establishment/profile/update/${id}`}>Editar</Link> |{" "}
-        <Link to={`/establishment/${id}`}>Minhas Ofertas</Link>
+        <Link to={`/establishment/profile/offers${id}`}>Minhas Ofertas</Link>
         <hr />
       </div>
 
-      <div className='establishmentProfileContainer'>
-        <div className='establishmentProfile'>
-          <div className='establishmentImage'>
+      <div className="establishmentProfileContainer">
+        <div className="establishmentProfile">
+          <div className="establishmentImage">
             <img
-              src='https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg'
-              alt='establishment'
+              src="https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg"
+              alt="establishment"
             />
             <p>{user.companyName}</p>
             <hr />
           </div>
 
-          <div className='establishmentData'>
+          <div className="establishmentData">
             <p>
               {" "}
               {user.address.street}, {user.address.number}
@@ -70,7 +70,7 @@ const EstablishmentProfile = () => {
           </div>
         </div>
 
-        <div className='greetingProfileContainer'>
+        <div className="greetingProfileContainer">
           <p>
             {" "}
             <h1>Olá, {user.companyName}! </h1>{" "}
@@ -78,13 +78,13 @@ const EstablishmentProfile = () => {
           <p>Categoria: {user.category}</p>
           <p>Cozinha: {user.cuisine}</p>
           <hr />
-          <div className='PaymentDelivery'>
+          <div className="PaymentDelivery">
             <p>
               {" "}
-              <img src='' alt='payment icon' /> {user.paymentForms}
+              <img src="" alt="payment icon" /> {user.paymentForms}
             </p>
             <p>
-              <img src='' alt='payment icon' /> {user.takeaway}
+              <img src="" alt="payment icon" /> {user.takeaway}
             </p>
             <p>
               Horário de retirada: das {user.takeawayTime.startTime} às{" "}
