@@ -54,7 +54,7 @@ const OfferDetails = () => {
           `/establishment/profile/${offer.owner}`
         );
 
-        setUser({ ...result.data.estabilishment });
+        setUser({ ...result.data.establishment });
         
       } catch (error) {
         console.log(error);
@@ -82,7 +82,7 @@ const OfferDetails = () => {
               <strong>R$ {offer.value}</strong>
             </p>
             <p>Retirada até: {offer.reservationLimitPeriod}</p>
-  <p>Horário de retirada: das {user.takeawayTime.startTime} às {user.takeawayTime.endTime}</p>
+            <p>Horário de retirada: das {user.takeawayTime.startTime} às {user.takeawayTime.endTime}</p>
             <p>Qtd disponível: {offer.availableQty}</p>
           </div>
         </div>

@@ -18,21 +18,29 @@ const EditOffer = () => {
     });
 
     function handleChange(event){
+        
         setOffer({...offer,[event.currentTarget.name]: event.currentTarget.value})
+
       }
 
-  useEffect(() => {
-    (async function fetchOffer() {
-      const result = await offersApi.get(`/offer/${id}`);
-        console.log(result)
-      setOffer({ ...result.id });
-    })();
-  }, []);
+      useEffect(() => {
+        (async function fetchOffer() {
+          try {
+            const result = await offersApi.get(`/offer/${id}`);
+    
+            setOffer({ ...result.data[0] });
+          } catch (error) {
+            console.log(error);
+          }
+        })();
+      }, []);
 
   async function handleSubmit(event) {
+    event.preventDefault();
+    
     try {
-      const result = await offersApi.put(`/offer/update/${id}`, event);
-
+      const result = await offersApi.put(`/offer/update/${id}`, offer);
+      console.log(result)
       history.push(`/offer/${id}`);
     } catch (err) {
       console.error(err);
