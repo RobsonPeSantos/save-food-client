@@ -12,7 +12,7 @@ const Home = (props) => {
         setOffers={props.setOffers}
       ></Form>
       <Link to="/offers" className="btn btn-success">
-        Success
+        Buscar
       </Link>
     </div>
   );
