@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 let backup;
-let count = 0;
 
 const SearchForm = (props) => {
   useEffect(() => {
-    if (count < 1) {
-      backup = [...props.offers];
-      count++;
+    if (props.allOffers.length) {
+      console.log(props.allOffers);
+      backup = [...props.allOffers];
     }
   }, [props]);
 
@@ -19,7 +17,7 @@ const SearchForm = (props) => {
       return props.setOffers([...backup]);
     }
 
-    const filtered = props.offers.filter((offer) => {
+    const filtered = props.allOffers.filter((offer) => {
       return offer.title.toLowerCase().includes(term.toLowerCase());
     });
 
@@ -35,13 +33,6 @@ const SearchForm = (props) => {
         placeholder="Search"
         aria-label="Search"
       />
-      {/* <Link
-        className="btn btn-outline-success my-2 my-sm-0"
-        type="submit"
-        to="/offers"
-      >
-        Search
-      </Link> */}
     </form>
   );
 };
