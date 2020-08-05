@@ -25,7 +25,7 @@ const EditOffer = () => {
     (async function fetchOffer() {
       const result = await offersApi.get(`/offer/${id}`);
         console.log(result)
-      setOffer({ ...result.data[0] });
+      setOffer({ ...result.id });
     })();
   }, []);
 
@@ -40,7 +40,7 @@ const EditOffer = () => {
   }
 
   return (
-    <div><h1>Cadastrar oferta</h1>
+    <div><h1>Editar Oferta</h1>
     <hr className = "form-group"></hr>
     <form onSubmit={handleSubmit}>
       <div className="form-group">
