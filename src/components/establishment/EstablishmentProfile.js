@@ -44,7 +44,7 @@ const EstablishmentProfile = () => {
           <h2>Perfil</h2>
         </p>
         <Link to={`/establishment/profile/update/${id}`}>Editar</Link> |{" "}
-        <Link to={`/establishment/profile/offers${id}`}>Minhas Ofertas</Link>
+        <Link to={`/establishment/profile/offers/${id}`}>Minhas Ofertas</Link>
         <hr />
       </div>
 
