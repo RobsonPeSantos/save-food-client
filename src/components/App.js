@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "../styles/App.css";
-// import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import Signup from "./auth/Signup";
 import Login from "./auth/Login";
@@ -39,7 +39,6 @@ function App() {
     (async function fetchOffers() {
       try {
         const result = await offersApi.get("/offers");
-       
 
         setOffers([...result.data]);
         backup = [...result.data];
@@ -56,26 +55,26 @@ function App() {
 
         <Switch>
           <Route
-            path='/home'
+            path="/home"
             render={() => (
               <Home allOffers={backup} offers={offers} setOffers={setOffers} />
             )}
           />
-          <Route path='/user/signup' exact component={Signup} />
+          <Route path="/user/signup" exact component={Signup} />
           <Route
-            path='/user/login'
+            path="/user/login"
             exact
             render={() => (
               <Login user={loggedInUser} setUser={setLoggedInUser} />
             )}
           />
           <Route
-            path='/user/logout'
+            path="/user/logout"
             exact
             render={() => <Logout setUser={setLoggedInUser} />}
           />
           <Route
-            path='/offers'
+            path="/offers"
             render={() => (
               <AllOffers
                 allOffers={backup}
@@ -87,25 +86,25 @@ function App() {
             user={""}
           />
           <Route
-            path='/offer/create'
+            path="/offer/create"
             render={() => <AddOffer offers={offers} setOffers={setOffers} />}
           />
-          <Route path='/offer/:id' exact component={OfferDetails} />
+          <Route path="/offer/:id" exact component={OfferDetails} />
           <Route
-            path='/offer/update/:id'
+            path="/offer/update/:id"
             render={() => <EditOffer offers={offers} setOffers={setOffers} />}
           />
-          <Route path='/blog' component={aboutUs} />
+          <Route path="/blog" component={aboutUs} />
           <Route
-            path='/offer/delete/:id'
+            path="/offer/delete/:id"
             exact
             render={() => <DeleteOffer offers={offers} setOffers={setOffers} />}
           />
 
-          <Route path='/offer/update/:id' component={EditOffer} />
+          <Route path="/offer/update/:id" component={EditOffer} />
 
           <Route
-            path='/establishment/profile/:id'
+            path="/establishment/profile/:id"
             exact
             component={EstablishmentProfile}
           />
@@ -114,17 +113,16 @@ function App() {
             exact
             component={EditEstablishment}
           />
-          <Route path='/blog/aboutUs' component={aboutUs} />
-          <Route path='/blog/howWorks' component={howWorks} />
+          <Route path="/blog/aboutUs" component={aboutUs} />
+          <Route path="/blog/howWorks" component={howWorks} />
 
           <Route
-            path='/establishment/profile/:id'
+            path="/establishment/profile/:id"
             exact
             component={EstablishmentProfile}
           />
           <Route
-            path='/establishment/profile/offers/:id'
-         
+            path="/establishment/profile/offers/:id"
             component={EstablishmentOffers}
             user={loggedInUser}
           />

@@ -5,35 +5,30 @@ const aboutUs = () => {
     <div id="section-2">
       <h1>Sobre nós</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta
-        mauris vitae nisl egestas, at ullamcorper odio eleifend. Nam est orci,
-        dignissim sit amet libero commodo, lobortis posuere orci. Etiam porta
-        quis nunc at egestas. Phasellus elementum, odio rutrum maximus
-        pellentesque, libero ex pharetra eros, vel fringilla metus nunc eu
-        risus. Donec faucibus, sem et dignissim tempor, massa ante consectetur
-        elit, vitae aliquet ligula tellus a purus. Quisque varius molestie
-        vulputate. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Praesent nec aliquam leo. Curabitur
-        vestibulum augue a purus fringilla posuere. Vivamus congue rutrum
-        blandit.
+        Somos um grupo formado para desenvolver aplicações inteligentes que
+        melhorem a vida dos usuários, trazendo soluções inteligentes para o
+        dia-a-dia.
+      </p>
+      <h2>Reduzir o desperdício</h2>
+      <p>
+        A Organização das Nações Unidas para a Alimentação e a Agricultura (FAO)
+        divulgou que 1,3 bilhão de toneladas de alimentos são perdidos no
+        planeta a cada ano, cerca de 30% do total produzido. No Brasil, os
+        últimos dados, divulgados em 2013, revelam que em apenas um ano o país
+        perdeu ou desperdiçou 26,3 milhões de toneladas de alimentos. Isso
+        representa quase 10% dos alimentos disponíveis. Enquanto isso, 5,2
+        milhões de pessoas no Brasil passam fome. Segundo a FAO, a perda de
+        alimentos prevalece nos países em desenvolvimento, como o Brasil. Já o
+        desperdício ocorre no final da cadeia alimentar (varejo e consumo), e
+        estaria mais associado às nações desenvolvidas.
       </p>
       <p>
-        Phasellus finibus, mauris porta consequat ornare, magna est maximus
-        augue, id venenatis massa nunc nec lectus. Vestibulum auctor pulvinar
-        ipsum. Quisque dui eros, porttitor id condimentum id, varius eu enim.
-        Nunc posuere, sem in interdum fringilla, libero magna consectetur orci,
-        eget commodo tortor mauris condimentum nisl. Nam varius eu felis vel
-        vehicula. Sed quis purus diam. Donec porta molestie sapien id iaculis.
-      </p>
-      <p>
-        {" "}
-        Duis in ipsum eget arcu convallis posuere at eu dolor. Pellentesque
-        lorem enim, porttitor sit amet molestie non, tempor nec felis.
-        Pellentesque vel ullamcorper odio, et ultricies nulla. Cras in pulvinar
-        enim. Donec sed tellus in leo gravida rutrum. Phasellus ultrices sapien
-        et tortor tempus, quis placerat ligula elementum. Pellentesque aliquam
-        libero vitae urna eleifend tincidunt. Pellentesque vulputate ornare
-        velit nec tincidunt. Vestibulum vel dignissim purus, id gravida orci.
+        Enquanto isso, com a situação financeira do país debilitada, muitos
+        consumidores procuram por soluções para adquirir alimentos de qualidade
+        mais baratos, enquanto os comerciantes buscam reduzir seu prejuízo
+        gerado pelo desperdício alimentar de produtos produzidos com curta
+        duração de validade e aparas de alimentos que são processados. Assim
+        nasce a Save Food.
       </p>
     </div>
   );
