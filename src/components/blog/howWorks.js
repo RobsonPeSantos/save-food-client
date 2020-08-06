@@ -1,6 +1,6 @@
 import React from "react";
 
-const howWorks = () => {
+const HowWorks = () => {
   return (
     <div>
       <h1>Blog</h1>
@@ -8,4 +8,4 @@ const howWorks = () => {
   );
 };
 
-export default howWorks;
+export default HowWorks;

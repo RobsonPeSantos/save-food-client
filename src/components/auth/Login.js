@@ -15,7 +15,8 @@ const Login = (props) => {
       props.setUser({ ...result.data });
       console.log("pos setUser Props");
       localStorage.setItem("loggedInUser", JSON.stringify({ ...result.data }));
-      history.push("/establishment/profile/:id");
+      history.push(`/establishment/profile/${result.data.userObj._id}`);
+      console.log(result.data);
     } catch (err) {
       console.error(err);
     }
