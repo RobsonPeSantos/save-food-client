@@ -19,7 +19,7 @@ import DeleteOffer from "./Offer/DeleteOffer";
 import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
 
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
-import EditEstablishment from "./establishment/EditEstablishment"
+import EditEstablishment from "./establishment/EditEstablishment";
 
 import offersApi from "../apis/offers";
 
@@ -104,14 +104,19 @@ function App() {
 
           <Route path="/offer/update/:id" component={EditOffer} />
 
-         
-          <Route path="/establishment/profile/:id" component={EstablishmentProfile}/>
-          <Route path="/establishment/profile/update/:id" component={EditEstablishment}/>
-          
+          <Route
+            path="/establishment/profile/:id"
+            exact
+            component={EstablishmentProfile}
+          />
+          <Route
+            path="/establishment/profile/update/:id"
+            exact
+            component={EditEstablishment}
+          />
 
-          <Route path="/blog/aboutUs" component={aboutUs} />
-          <Route path="/blog/howWorks" component={howWorks} />
-
+          <Route path="/blog/aboutUs" exact component={aboutUs} />
+          <Route path="/blog/howWorks" exact component={howWorks} />
 
           <Route
             path="/establishment/profile/:id"
