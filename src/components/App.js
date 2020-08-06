@@ -12,8 +12,8 @@ import AllOffers from "./Offer/AllOffers";
 import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
 import Home from "./home/Home";
-import aboutUs from "./blog/aboutUs";
-import howWorks from "./blog/howWorks";
+import AboutUs from "./blog/aboutUs";
+import HowWorks from "./blog/howWorks";
 import EditOffer from "./Offer/EditOffer";
 import DeleteOffer from "./Offer/DeleteOffer";
 import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
@@ -94,7 +94,6 @@ function App() {
             path="/offer/update/:id"
             render={() => <EditOffer offers={offers} setOffers={setOffers} />}
           />
-          <Route path="/blog" component={aboutUs} />
           <Route
             path="/offer/delete/:id"
             exact
@@ -113,8 +112,8 @@ function App() {
             exact
             component={EditEstablishment}
           />
-          <Route path="/blog/aboutUs" component={aboutUs} />
-          <Route path="/blog/howWorks" component={howWorks} />
+          <Route path="/blog/AboutUs" component={AboutUs} />
+          <Route path="/blog/HowWorks" component={HowWorks} />
 
           <Route
             path="/establishment/profile/:id"
@@ -124,7 +123,6 @@ function App() {
           <Route
             path="/establishment/profile/offers/:id"
             component={EstablishmentOffers}
-            user={loggedInUser}
           />
         </Switch>
       </div>

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
+
+import { useParams } from "react-router-dom";
+
 
 import userApi from "../../apis/users";
 
 const EditEstablishment = () => {
+
   const { id } = useParams();
   const history = useHistory();
 
@@ -246,6 +251,7 @@ const EditEstablishment = () => {
       </form>
     </div>
   );
+
 };
 
 export default EditEstablishment;
