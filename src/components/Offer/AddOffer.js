@@ -40,11 +40,12 @@ const AddOffer = () => {
   }
 
   return ( 
-    <div><h1>Cadastrar oferta</h1>
+    <div className="backgroundColor">
+    <h1>Cadastrar oferta</h1>
     <hr className = "form-group"></hr>
     <form onSubmit={handleSubmit}>
       <div className="form-group ml-5">
-        <label htmlFor="nomePrato">Nome do Prato (title)</label>
+        <label htmlFor="nomePrato">Nome do Prato</label>
         <input
           type="text"
           className="form-control form-control-lg col-5"
@@ -56,7 +57,7 @@ const AddOffer = () => {
         />
       </div>
       <div className="form-group ml-5">
-        <label htmlFor="valorPrato">Valor do prato (Value)</label>
+        <label htmlFor="valorPrato">Valor do Prato</label>
         <input
           className="form-control form-control-lg col-5"
           name="value"
@@ -76,7 +77,7 @@ const AddOffer = () => {
         />
         </div>
         <div className="form-group ml-5">
-        <label htmlFor="fotoPrato">Foto do Prato (photo)</label>
+        <label htmlFor="fotoPrato">Foto do Prato</label>
         <input
           type="text"
           className="form-control form-control-lg col-5"
