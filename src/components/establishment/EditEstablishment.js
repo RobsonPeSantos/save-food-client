@@ -1,6 +1,4 @@
-
 import React, { useState } from "react";
-
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -252,7 +250,5 @@ const EditEstablishment = () => {
     </div>
   );
 };
-
- 
 
 export default EditEstablishment;
