@@ -1,6 +1,6 @@
 import React from "react";
 
-const aboutUs = () => {
+const AboutUs = () => {
   return (
     <div id="section-2">
       <h1>Sobre nós</h1>
@@ -34,4 +34,4 @@ const aboutUs = () => {
   );
 };
 
-export default aboutUs;
+export default AboutUs;
