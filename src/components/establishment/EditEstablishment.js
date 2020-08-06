@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
 
+
 import userApi from "../../apis/users";
 
 const EditEstablishment = () => {
@@ -11,6 +12,8 @@ const EditEstablishment = () => {
   const history = useHistory();
 
   const [profile, setProfile] = useState({
+    
+    
     companyName: "",
     category: "",
     cuisine: [],
@@ -59,12 +62,12 @@ const EditEstablishment = () => {
     try {
       const result = await userApi.put(
         `/establishment/profile/update/${id}`,
-        profile
+        {establishment: {...profile}}
       );
 
       console.log(profile);
-      //   history.push(`/establishment/profile/${id}`);
-      //   history.go();
+        history.push(`/establishment/profile/${id}`);
+        
     } catch (err) {
       console.error(err);
     }
