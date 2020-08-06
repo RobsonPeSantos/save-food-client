@@ -4,17 +4,19 @@ import offersApi from "../../apis/offers";
 
 const EstablishmentOffers = () => {
   const { id } = useParams();
-  const [offers] = useState([]);
+  const [offers, setOffers] = useState([]);
 
   useEffect(() => {
+    console.log("tem erro");
     (async function fetchEstablishmentOffers() {
       try {
         const result = await offersApi.get(`/offers/${id}`);
+        setOffers([...result.data]);
       } catch (err) {
         console.log(err);
       }
     })();
-  });
+  }, []);
 
   return (
     <div>

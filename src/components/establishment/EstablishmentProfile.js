@@ -32,6 +32,7 @@ const EstablishmentProfile = () => {
 
         setUser({ ...result.data.establishment });
       } catch (error) {
+        console.log("caiu no erro");
         console.log(error);
       }
     })();
