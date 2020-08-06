@@ -110,11 +110,10 @@ function App() {
             component={EstablishmentProfile}
           />
           <Route
-            path='/establishment/profile/update/:id'
+            path="/establishment/profile/update/:id"
             exact
             component={EditEstablishment}
           />
-
           <Route path='/blog/aboutUs' component={aboutUs} />
           <Route path='/blog/howWorks' component={howWorks} />
 
