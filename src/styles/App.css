@@ -65,13 +65,16 @@ Linhas hr Forms #f2ddcc AREIA
 .establishmentProfileContainer {
   display: flex;
   justify-content: flex-start;
+  
 }
 
 .establishmentProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid gray;
+  align-self: center;
+  text-align: center;
+  border: 1px solid #d9d9d9;
   max-width: 20rem;
   margin-left: 4rem;
   padding: 2rem;
@@ -82,10 +85,12 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
+
 .establishmentEditContainer{
   
 
 }
+
 
 
 /* All Offers */
@@ -153,9 +158,15 @@ button:hover {
 
 /* Home */
 .home-background {
-  height: 800px;
+
+  
+  width: 100vw ;
+  height: 100vw;
+  position: relative;
+
   background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
   background-repeat: no-repeat;
+ 
 }
 
 .homeLogo {
@@ -167,7 +178,7 @@ button:hover {
 .homeSearchField {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 /* About us */
@@ -286,7 +297,8 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* navbar */
 .navbar {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
 }
 
 .navbar-div {
@@ -298,3 +310,9 @@ Linhas hr Forms #f2ddcc AREIA
   align-content: space-around;
 }
 
+
+/* footer */
+
+.footer {
+  background-color: #b9cdcb;
+}

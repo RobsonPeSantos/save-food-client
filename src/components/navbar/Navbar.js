@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-
       <nav
         className="navbar navbar-expand-lg navbar-light"
         style={{ background: "#4b3f3f" }}
         loading="lazy"
       >
-
         <button
           className="navbar-toggler"
           type="button"
@@ -27,7 +25,7 @@ const Navbar = () => {
             src="https://i.ibb.co/LxYcMsj/Logo-Completo.png"
             className="img-fluid"
             alt="logo"
-            style={{ height: "60px" }}
+            style={{ height: "3rem" }}
           ></img>
         </Link>
 
@@ -36,7 +34,7 @@ const Navbar = () => {
             <li className="nav-item" style={{ marginLeft: "10rem" }}>
               <Link
                 className="nav-link"
-                style={{ color: "white", font: "10px" }}
+                style={{ color: "white", font: "1rem" }}
                 to="/user/signup"
               >
                 Faça parte
