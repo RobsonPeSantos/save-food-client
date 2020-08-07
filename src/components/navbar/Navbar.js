@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+
+
+const Navbar = (props) => {
   return (
     <div>
       <nav
@@ -67,6 +69,17 @@ const Navbar = () => {
                 to="/user/login"
               >
                 Login
+              </Link>
+            </li>
+            <li className="nav-item active" style={{ marginLeft: "1rem" }}>
+              <Link
+                className="nav-link"
+                style={{
+                  color: "white",
+                }}
+                to={`/establishment/profile/${props.user.userObj._id}`}
+              >
+                Perfil
               </Link>
             </li>
           </ul>
