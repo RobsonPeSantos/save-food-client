@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 let backup;
 
@@ -26,24 +26,36 @@ const SearchForm = (props) => {
   }
 
   return (
-    
-    <div className="homeSearchField" style={{maxWidth: 1350}}>
-      <form className='form-control form-control-lg col-6 border-0' style={{borderRadius: 75}} >
+    <div className="homeSearchField">
+      <form
+        className="form-control form-control-lg col-6 border-0"
+        style={{
+          borderRadius: 75,
+          backgroundColor: "#f0f0f0",
+        }}
+      >
         <input
-          className='form-control border-0'
+          className="form-control border-0"
           onKeyUp={filterOffers}
-          type='search'
-          placeholder='Search'
-          aria-label='Search'
-          
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          style={{ backgroundColor: "#f0f0f0" }}
         />
-      
       </form>
-    
-      <Link to="/offers" className="btn btn-success ml-2 " style={{background: "#276359", borderColor: "#276359", borderRadius: 50, paddingTop: 12 }} >Buscar
-      </Link>
-    
 
+      <Link
+        to="/offers"
+        className="btn btn-success ml-2 "
+        style={{
+          background: "#276359",
+          borderColor: "#276359",
+          borderRadius: 50,
+          paddingTop: 12,
+        }}
+      >
+        Buscar
+      </Link>
     </div>
   );
 };

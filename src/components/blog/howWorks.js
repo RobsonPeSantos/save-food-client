@@ -5,31 +5,48 @@ const HowWorks = () => {
   return (
     <div className="howWorksBkg">
       <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
-          mauris consequat, semper erat in, ullamcorper dui. In hac habitasse
-          platea dictumst. Integer interdum velit tellus, eget semper est
-          faucibus eget. Donec a egestas elit, in pretium ante. Quisque nisi
-          erat, vehicula eget interdum nec, maximus non purus. Nullam ut sodales
-          quam. Morbi vel purus porttitor, consectetur lorem vel, malesuada
-          lectus. Fusce eros urna, condimentum at lacus ut, dictum tempus
-          turpis. Vivamus id est sed elit congue pulvinar.
-        </p>
+        <p>.</p>
       </div>
       <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
+        <h1 class="display-4">Como funciona?</h1>
         <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
+          A idéia é simples. Assim como em um <i>market place</i> nós unimos as
+          duas pontas, consumidores e *vendedores. Os vendedores podem ser
+          comerciantes de segmento alimentício de qualquer esfera, que tenham
+          desperdício de comida e queiram fazer ofertas promocionais destes
+          alimentos.
+          <p>
+            Exemplo: um restaurante que produz cinquenta a cem lasanhas
+            semanalmente, mas acaba tendo que jogar no lixo 5 a 10 lasanhas no
+            final da semana, pois elas já não estão mais próprias para o
+            consumo.
+          </p>
+          <p>
+            Este restaurante cadastra suas lasanhas que estão próximas do
+            vencimento, com um preço promocional. Os consumidores podem acessar
+            estas lasanhas cadastradas, através barra de pesquisa na nossa
+            <Link to="/" style={{ color: "#e28250" }}>
+              {" "}
+              home{" "}
+            </Link>{" "}
+            e reservar sua retirada
+          </p>
         </p>
         <hr class="my-4"></hr>
         <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
+          *Restaurantes, padarias, mercados, horti-fruti, vendinhas e catering
+          são alguns exemplos de comerciantes que podem anunciar seus pratos e
+          alimentos no Save Food.
         </p>
         <p class="lead">
-          <Link class="btn btn-primary btn-lg" href="#" role="button">
-            Learn more
+          <Link
+            class="btn btn-primary btn-lg"
+            style={{ backgroundColor: "#276359", border: "#276359" }}
+            href="#"
+            role="button"
+            to="/user/signup"
+          >
+            Cadastre seu estabelecimento
           </Link>
         </p>
       </div>

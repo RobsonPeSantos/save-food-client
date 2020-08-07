@@ -55,7 +55,8 @@ function App() {
 
         <Switch>
           <Route
-            path="/home"
+            path="/"
+            exact
             render={() => (
               <Home allOffers={backup} offers={offers} setOffers={setOffers} />
             )}

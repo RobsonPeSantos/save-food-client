@@ -13,14 +13,13 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* OFFER CLASSES */
 
-.offerCard {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid gray;
   width: 15rem;
-  padding: 2rem;
+  border: 2px solid #276359;
 }
 
 .offerDetailsContainer {
@@ -65,7 +64,6 @@ Linhas hr Forms #f2ddcc AREIA
 .establishmentProfileContainer {
   display: flex;
   justify-content: flex-start;
-  
 }
 
 .establishmentProfile {
@@ -85,22 +83,15 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
-
-.establishmentEditContainer{
-  
-
-}
-
-
-
 /* All Offers */
 
 .offersBody {
   margin: 0;
-  padding: 11.25rem 28.125rem;
   overflow: hidden;
   font-family: sans-serif;
   color: #276359;
+  display: flex;
+  padding: 1rem;
 }
 
 .container {
@@ -158,21 +149,21 @@ button:hover {
 
 /* Home */
 .home-background {
-
-  
-  width: 100vw ;
-  height: 100vw;
+  width: 100vw;
+  height: 40vw;
   position: relative;
-
-  background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
+  background-image: url("https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png");
   background-repeat: no-repeat;
- 
+  background-size: cover;
 }
 
 .homeLogo {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  align-content: stretch;
 }
 
 .homeSearchField {
@@ -184,10 +175,7 @@ button:hover {
 /* About us */
 #section-2 {
   display: flex;
-  margin-top: 50px;
-  height: 800px;
-  background-image: url(https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-  background-position-y: initial;
+  background-image: url("https://c.pxhere.com/photos/6c/b8/kitchen_chef_food_cook_restaurant-103038.jpg!d");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -196,14 +184,29 @@ button:hover {
   align-items: center;
 }
 
+#dark-background {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #section-2 h1 {
   font-size: 80px;
   letter-spacing: 3px;
+  filter: brightness(2);
+  margin-top: 1rem;
+}
+
+#section-2 h2 {
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
 }
 
 #section-2 p {
   font-size: 30px;
   text-align: center;
+  padding: 2rem 15rem 2rem 15rem;
 }
 
 .modal {
@@ -249,30 +252,48 @@ hr {
   background-color: #276359;
 }
 
-.divbtnLogin {
-  padding-left: 65rem;
-}
-
-.btnLogin{
+.btnLogin {
   background-color: #276359;
 }
 
 .inputLogin {
-  padding-left: 30rem;
-  margin-left: 55rem;
-  width: 10rem;
 }
 
 .inputLabelLogin {
-  padding-left: 55rem;
 }
 
 .hrWidthLoginForm {
-  padding-left: 21rem;
-  margin-left: 55rem;
+  /* padding-left: 21rem;
+  margin-left: 55rem; */
   width: 10rem;
 }
 
+.form-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 20rem;
+}
+
+.divbtnLogin {
+  text-align: center;
+}
 
 /* Cores:
 
@@ -290,15 +311,29 @@ Linhas hr Forms #f2ddcc AREIA
 /* how works styles */
 .howWorksBkg {
   background-image: url(https://image.freepik.com/free-photo/closeup-two-business-men-shaking-hands_1262-3740.jpg);
+  height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
 }
 
+.jumbotron {
+  background-color: #b9cdcb;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10rem;
+}
+
+.jumbotron > h1 {
+  filter: brightness(2);
+}
+
+.jumbotron > p {
+  filter: brightness(2);
+}
 
 /* navbar */
 .navbar {
   font-size: 1.2rem;
-
 }
 
 .navbar-div {
@@ -309,7 +344,6 @@ Linhas hr Forms #f2ddcc AREIA
   align-items: stretch;
   align-content: space-around;
 }
-
 
 /* footer */
 
