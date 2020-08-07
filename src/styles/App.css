@@ -151,10 +151,10 @@ button:hover {
 .home-background {
   width: 100vw;
   height: 40vw;
-  position: relative;
+  /* position: relative; */
   background-image: url("https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .homeLogo {
@@ -163,7 +163,7 @@ button:hover {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  align-content: stretch;
+  /* align-content: stretch; */
 }
 
 .homeSearchField {
@@ -349,4 +349,13 @@ Linhas hr Forms #f2ddcc AREIA
 
 .footer {
   background-color: #b9cdcb;
+}
+
+.login-background {
+  width: 100vw;
+  height: 40vw;
+  /* position: relative; */
+  background-image: url("https://res.cloudinary.com/savefood/image/upload/v1596818065/save-food/LoginBackground_stl5p6.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }

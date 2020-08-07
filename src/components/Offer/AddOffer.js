@@ -60,9 +60,9 @@ const AddOffer = () => {
 
 
       const result = await offersApi.post("/offer/create", {...offer, photo: attachmentUrl});
-
-      history.push(`/offers`);
-      history.go();
+console.log(result)
+      history.push(`/establishment/profile/offers/${result.data.owner}`);
+      // history.go();
     } catch (err) {
       console.error(err);
     }
