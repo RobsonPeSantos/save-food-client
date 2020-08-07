@@ -11,9 +11,9 @@ const Login = (props) => {
   async function handleSubmit(data) {
     try {
       const result = await authApi.post("/user/login", data);
-      console.log("tentativa de login");
+   
       props.setUser({ ...result.data });
-      console.log("pos setUser Props");
+   
       localStorage.setItem("loggedInUser", JSON.stringify({ ...result.data }));
       history.push(`/establishment/profile/${result.data.userObj._id}`);
       console.log(result.data);
@@ -22,8 +22,9 @@ const Login = (props) => {
     }
   }
   return (
-    <div style={{border: "1rem"}}>
-      <h1 className="divbtnLogin titleFormat">Login</h1>
+    <div className="form-container" style={{border: "1rem"}}>
+      <div className="login-box">
+      <h1 className="">Login</h1>
       <hr className="hrWidthLoginForm"></hr>
       <AuthForm
         handleSubmit={handleSubmit}
@@ -31,7 +32,10 @@ const Login = (props) => {
         user={user}
         buttonText="Login"
       />
+      </div>
+    
     </div>
+
   );
 };
 
