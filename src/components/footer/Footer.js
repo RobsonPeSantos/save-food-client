@@ -22,7 +22,7 @@ const Footer = () => {
           <div class="col-md-6 mt-md-0 mt-3">
             <p>
               Developed at{" "}
-              <Link to="https://www.ironhack.com/br">Iron Hack</Link>
+              <Link to="https://www.ironhack.com/br"> Iron Hack </Link>
               by <u>Robson Santos, Rodrigo Sena</u> and <u>Guilherme Graner</u>
             </p>
           </div>
