@@ -99,7 +99,7 @@ function App() {
           <Route
             path="/offer/delete/:id"
             exact
-            render={() => <DeleteOffer offers={offers} setOffers={setOffers} />}
+            render={() => <DeleteOffer user={loggedInUser} offers={offers} setOffers={setOffers} />}
           />
 
           <Route path="/offer/update/:id" component={EditOffer} />
