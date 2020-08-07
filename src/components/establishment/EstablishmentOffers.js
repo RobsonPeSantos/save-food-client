@@ -37,6 +37,13 @@ const EstablishmentOffers = () => {
               >
                 EDITAR
               </Link>
+              <Link
+                type="button"
+                className="button"
+                to={`/offer/delete/${offer._id}`}
+              >
+                DELETAR
+              </Link>
             </div>
           </div>
         ))}
