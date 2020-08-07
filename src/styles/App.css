@@ -13,14 +13,13 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* OFFER CLASSES */
 
-.offerCard {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid gray;
   width: 15rem;
-  padding: 2rem;
+  border: 2px solid #276359;
 }
 
 .offerDetailsContainer {
@@ -65,7 +64,6 @@ Linhas hr Forms #f2ddcc AREIA
 .establishmentProfileContainer {
   display: flex;
   justify-content: flex-start;
-  
 }
 
 .establishmentProfile {
@@ -85,22 +83,18 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
-
-.establishmentEditContainer{
-  
-
+.establishmentEditContainer {
 }
-
-
 
 /* All Offers */
 
 .offersBody {
   margin: 0;
-  padding: 11.25rem 28.125rem;
   overflow: hidden;
   font-family: sans-serif;
   color: #276359;
+  display: flex;
+  padding: 1rem;
 }
 
 .container {
@@ -158,10 +152,8 @@ button:hover {
 
 /* Home */
 .home-background {
-
-  
-  width: 100vw ;
-  height: 100vw;
+  width: 100vw;
+  height: 40vw;
   position: relative;
   background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
   background-repeat: no-repeat;
@@ -262,7 +254,7 @@ hr {
   padding-left: 65rem;
 }
 
-.btnLogin{
+.btnLogin {
   background-color: #276359;
 }
 
@@ -281,7 +273,6 @@ hr {
   margin-left: 55rem;
   width: 10rem;
 }
-
 
 /* Cores:
 
@@ -319,11 +310,9 @@ Linhas hr Forms #f2ddcc AREIA
   filter: brightness(2);
 }
 
-
 /* navbar */
 .navbar {
   font-size: 1.2rem;
-
 }
 
 .navbar-div {
@@ -334,7 +323,6 @@ Linhas hr Forms #f2ddcc AREIA
   align-items: stretch;
   align-content: space-around;
 }
-
 
 /* footer */
 
