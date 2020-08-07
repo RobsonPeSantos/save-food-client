@@ -20,6 +20,7 @@ const EstablishmentOffers = () => {
 
   return (
     <div>
+      <Link to={`/establishment/profile/${id}`}>Voltar para perfil</Link> | <Link to="/offer/create">Criar Oferta</Link>
       <div className="offersBody">
         {offers.map((offer) => (
           <div className="container" key={offer.owner._id}>
@@ -29,7 +30,7 @@ const EstablishmentOffers = () => {
             <div className="content">
               <h2>{offer.title}</h2>
               <p>{`R$ ${offer.value}`}</p>
-              <p>{offer.owner}</p>
+              
               <Link
                 type="button"
                 className="button"

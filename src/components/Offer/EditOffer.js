@@ -4,7 +4,9 @@ import { useParams, useHistory } from "react-router-dom";
 import offersApi from "../../apis/offers";
 
 const EditOffer = () => {
+  
     const { id } = useParams();
+
     const history = useHistory();
   
     const [offer, setOffer] = useState({
