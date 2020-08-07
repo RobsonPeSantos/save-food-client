@@ -25,7 +25,7 @@ const HowWorks = () => {
             Este restaurante cadastra suas lasanhas que estão próximas do
             vencimento, com um preço promocional. Os consumidores podem acessar
             estas lasanhas cadastradas, através barra de pesquisa na nossa
-            <Link to="/home"> home </Link> e reservar sua retirada
+            <Link to="/"> home </Link> e reservar sua retirada
           </p>
         </p>
         <hr class="my-4"></hr>
