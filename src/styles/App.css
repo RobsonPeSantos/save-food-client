@@ -241,3 +241,18 @@ Linhas hr Forms #f2ddcc AREIA
   background-size: cover;
 }
 
+
+/* navbar */
+.navbar {
+  font-size: 1.5rem;
+}
+
+.navbar-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-around;
+}
+

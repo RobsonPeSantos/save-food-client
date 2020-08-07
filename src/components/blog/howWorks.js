@@ -6,11 +6,6 @@ const HowWorks = () => {
     <div className="howWorksBkg">
       <div>
         <p>
-          <image
-            src="https://image.freepik.com/free-photo/closeup-two-business-men-shaking-hands_1262-3740.jpg"
-            className="shakingHandsImg"
-            alt="shaking-hands-photo"
-          ></image>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
           mauris consequat, semper erat in, ullamcorper dui. In hac habitasse
           platea dictumst. Integer interdum velit tellus, eget semper est
