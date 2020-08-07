@@ -32,7 +32,11 @@ const Signup = () => {
         user={user}
         buttonText="Sign up"
       />
+      <div >
+        <img src="https://res.cloudinary.com/savefood/image/upload/v1596761593/save-food/SignupBG.png" alt="" style={{width: 150, margin: 10}} />
+        </div>
     </div>
+    
   );
 };
 
