@@ -20,7 +20,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/home">
           <img
             src="https://i.ibb.co/LxYcMsj/Logo-Completo.png"
             className="img-fluid"
