@@ -55,9 +55,12 @@ const EditEstablishment = () => {
     event.preventDefault();
 
     try {
-      const result = await userApi.put(`/establishment/profile/update/${id}`, {
-        establishment: { ...profile },
-      });
+
+      const result = await userApi.put(
+        `/establishment/profile/update/${id}`,
+        {establishment: {...profile}}
+      );
+
 
       console.log(profile);
       history.push(`/establishment/profile/${id}`);
