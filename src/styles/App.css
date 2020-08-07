@@ -153,8 +153,7 @@ button:hover {
 
 /* Home */
 .home-background {
- 
-  height: 800px ;
+  height: 800px;
   background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
   background-repeat: no-repeat;
 }
@@ -163,8 +162,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
 }
 
 .homeSearchField {
@@ -203,33 +200,32 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-
 /* General */
 h1 {
-  color: #276359
+  color: #276359;
 }
 
 label {
-  color: #276359
+  color: #276359;
 }
 
 hr {
-  color: #276359
+  color: #276359;
 }
 
 /* AddOffer and EditOffer Style */
 
-.divLinesColor{
+.divLinesColor {
   border-bottom-color: #f2ddcc;
 }
 
-.titleFormat{
+.titleFormat {
   padding: 1rem;
   margin-left: 2rem;
-  margin-top: 1.5rem
+  margin-top: 1.5rem;
 }
 
-.divbtnSaveAdd{
+.divbtnSaveAdd {
   padding-left: 14rem;
   color: #276359;
 }
@@ -238,9 +234,34 @@ hr {
   margin: 10rem;
 }
 
-.btnSaveAdd{
-  background-color: #276359 ;
+.btnSaveAdd {
+  background-color: #276359;
 }
+
+.divbtnLogin {
+  padding-left: 65rem;
+}
+
+.btnLogin{
+  background-color: #276359;
+}
+
+.inputLogin {
+  padding-left: 30rem;
+  margin-left: 55rem;
+  width: 10rem;
+}
+
+.inputLabelLogin {
+  padding-left: 55rem;
+}
+
+.hrWidthLoginForm {
+  padding-left: 21rem;
+  margin-left: 55rem;
+  width: 10rem;
+}
+
 
 /* Cores:
 

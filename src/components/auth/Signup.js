@@ -24,8 +24,8 @@ const Signup = () => {
 
   return (
     <div>
-      <h1>Signup</h1>
-      <hr></hr>
+      <h1 className="divbtnLogin titleFormat">Signup</h1>
+      <hr className="hrWidthLoginForm" ></hr>
       <AuthForm
         handleSubmit={handleSubmit}
         setUser={setUser}
