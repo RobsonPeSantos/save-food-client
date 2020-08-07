@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useEffect } from "react";
 
-import { useParams } from "react-router-dom";
-
 
 import userApi from "../../apis/users";
 
