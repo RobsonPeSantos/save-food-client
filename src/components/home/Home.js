@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "../navbar/Form";
-import { Link } from "react-router-dom";
 
 const Home = (props) => {
   return (
