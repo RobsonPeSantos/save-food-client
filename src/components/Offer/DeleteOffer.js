@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 
 import offersApi from "../../apis/offers";
@@ -6,24 +6,6 @@ import offersApi from "../../apis/offers";
 const DeleteOffer = (props) => {
   const { id } = useParams();
   const history = useHistory();
-
-//   const [offer, setOffer] = useState({
-//     title: "",
-//     value: "",
-//     active: "",
-//     photo: "",
-//     availableQty: "",
-//     reservationLimitPeriod: "",
-//     owner: ""
-//   });
-
-//   useEffect(() => {
-//     (async function fetchTask() {
-//       const result = await offersApi.get(`/offer/update/${id}`);
-
-//       setOffer({ ...result.data[0] });
-//     })();
-//   }, []);
 
   async function handleClick() {
     try {

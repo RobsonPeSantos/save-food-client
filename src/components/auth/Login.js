@@ -22,9 +22,9 @@ const Login = (props) => {
     }
   }
   return (
-    <div>
-      <h1>Login</h1>
-      <hr></hr>
+    <div style={{border: "1rem"}}>
+      <h1 className="divbtnLogin titleFormat">Login</h1>
+      <hr className="hrWidthLoginForm"></hr>
       <AuthForm
         handleSubmit={handleSubmit}
         setUser={setUser}
