@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
+
       <nav
         className="navbar navbar-expand-lg navbar-light"
         style={{ background: "#4b3f3f" }}
         loading="lazy"
       >
+
         <button
           className="navbar-toggler"
           type="button"

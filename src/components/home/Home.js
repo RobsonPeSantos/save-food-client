@@ -5,15 +5,26 @@ import { Link } from "react-router-dom";
 const Home = (props) => {
   return (
     <div className="home-background">
-      <h1>Home</h1>
+    
       <Form
         allOffers={props.allOffers}
         offers={props.offers}
         setOffers={props.setOffers}
       ></Form>
-      <Link to="/offers" className="btn btn-success">
-        Buscar
-      </Link>
+
+      <div className="homeLogo">
+        <div >
+        <img src="https://res.cloudinary.com/savefood/image/upload/v1596761593/save-food/LogoGrafismo_vdfqst.png" alt="" style={{width: 150, margin: 10}} />
+        </div>
+        <div>
+        <h1 style={{color: "white", fontSize: 50}}>Porque comida não se joga fora</h1>
+        </div>
+        <div>
+        <h4 style={{color: "white"}}>Seja um estabelecimento participante</h4>
+        </div>
+        
+      </div>
+      
     </div>
   );
 };
