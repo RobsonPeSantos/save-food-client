@@ -82,15 +82,12 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
-<<<<<<< HEAD
 .establishmentEditContainer{
   
 
 }
 
 
-=======
->>>>>>> ef36515f500750357d281dbd5acf114765c55bee
 /* All Offers */
 
 .offersBody {
@@ -170,15 +167,12 @@ button:hover {
   
 }
 
-<<<<<<< HEAD
 .homeSearchField {
   display: flex;
   justify-content: center;
   padding: 2rem;
 }
 
-=======
->>>>>>> ef36515f500750357d281dbd5acf114765c55bee
 /* About us */
 #section-2 {
   display: flex;
@@ -223,7 +217,7 @@ hr {
   color: #276359
 }
 
-/* AddOffers Style */
+/* AddOffer and EditOffer Style */
 
 .divLinesColor{
   border-bottom-color: #f2ddcc;
@@ -268,11 +262,7 @@ Linhas hr Forms #f2ddcc AREIA
   background-size: cover;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 62dd5b904c9926802a16e9d048e546ad6ef0fe61
 /* navbar */
 .navbar {
   font-size: 1.5rem;
@@ -286,9 +276,4 @@ Linhas hr Forms #f2ddcc AREIA
   align-items: stretch;
   align-content: space-around;
 }
-<<<<<<< HEAD
-=======
->>>>>>> ef36515f500750357d281dbd5acf114765c55bee
-=======
 
->>>>>>> 62dd5b904c9926802a16e9d048e546ad6ef0fe61
