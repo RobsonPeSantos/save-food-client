@@ -254,7 +254,7 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* navbar */
 .navbar {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navbar-div {
@@ -264,4 +264,10 @@ Linhas hr Forms #f2ddcc AREIA
   justify-content: space-between;
   align-items: stretch;
   align-content: space-around;
+}
+
+/* footer */
+
+.footer {
+  background-color: #b9cdcb;
 }

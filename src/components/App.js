@@ -11,13 +11,13 @@ import AddOffer from "./Offer/AddOffer";
 import AllOffers from "./Offer/AllOffers";
 import OfferDetails from "./Offer/OfferDetails";
 import Navbar from "./navbar/Navbar";
+import Footer from "./footer/Footer";
 import Home from "./home/Home";
 import AboutUs from "./blog/aboutUs";
 import HowWorks from "./blog/howWorks";
 import EditOffer from "./Offer/EditOffer";
 import DeleteOffer from "./Offer/DeleteOffer";
 import EstablishmentOffers from "../components/establishment/EstablishmentOffers";
-
 import EstablishmentProfile from "./establishment/EstablishmentProfile";
 import EditEstablishment from "./establishment/EditEstablishment";
 
@@ -125,6 +125,7 @@ function App() {
             component={EstablishmentOffers}
           />
         </Switch>
+        <Footer offers={offers} setOffers={setOffers}></Footer>
       </div>
     </BrowserRouter>
   );
