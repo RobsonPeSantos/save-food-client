@@ -4,7 +4,7 @@ import { useParams, useHistory } from "react-router-dom";
 import offersApi from "../../apis/offers";
 
 const DeleteOffer = (props) => {
-
+console.log(props)
   const { id } = useParams();
   const history = useHistory();
 
