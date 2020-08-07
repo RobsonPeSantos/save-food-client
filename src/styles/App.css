@@ -11,8 +11,6 @@ Border <DIV>	  #d9d9d9 CINZA CLARO
 Linhas hr Forms #f2ddcc AREIA
  */
 
-
-
 /* OFFER CLASSES */
 
 .offerCard {
@@ -25,14 +23,12 @@ Linhas hr Forms #f2ddcc AREIA
   padding: 2rem;
 }
 
-
 .offerDetailsContainer {
   display: flex;
   justify-content: space-around;
   margin: 2rem;
   padding: 1rem;
 }
-
 
 .offerImg {
   display: flex;
@@ -46,11 +42,13 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* ESTABLISHMENT CLASSES */
 
-.establishmentImage img {  /* Offer details component */
+.establishmentImage img {
+  /* Offer details component */
   width: 13rem;
 }
 
-.establishmentCard {  /* Offer details component */
+.establishmentCard {
+  /* Offer details component */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,18 +57,17 @@ Linhas hr Forms #f2ddcc AREIA
   padding: 2rem;
 }
 
-.profileMenu{
+.profileMenu {
   padding: 1rem;
   margin-left: 3rem;
 }
 
 .establishmentProfileContainer {
   display: flex;
-  justify-content: flex-start ;
-  
+  justify-content: flex-start;
 }
 
-.establishmentProfile { 
+.establishmentProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,15 +80,17 @@ Linhas hr Forms #f2ddcc AREIA
 .greetingProfileContainer {
   padding: 3rem;
   margin-left: 2rem;
-
 }
 
+<<<<<<< HEAD
 .establishmentEditContainer{
   
 
 }
 
 
+=======
+>>>>>>> ef36515f500750357d281dbd5acf114765c55bee
 /* All Offers */
 
 .offersBody {
@@ -171,12 +170,15 @@ button:hover {
   
 }
 
+<<<<<<< HEAD
 .homeSearchField {
   display: flex;
   justify-content: center;
   padding: 2rem;
 }
 
+=======
+>>>>>>> ef36515f500750357d281dbd5acf114765c55bee
 /* About us */
 #section-2 {
   display: flex;
@@ -206,3 +208,63 @@ button:hover {
   display: block !important;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+
+/* General */
+h1 {
+  color: #276359
+}
+
+label {
+  color: #276359
+}
+
+hr {
+  color: #276359
+}
+
+/* AddOffers Style */
+
+.divLinesColor{
+  border-bottom-color: #f2ddcc;
+}
+
+.titleFormat{
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem
+}
+
+.divbtnSaveAdd{
+  padding-left: 14rem;
+  color: #276359;
+}
+
+.datePosFormAdd {
+  margin: 10rem;
+}
+
+.btnSaveAdd{
+  background-color: #276359 ;
+}
+
+/* Cores:
+
+NavBar 		      #4b3f3f MARROM
+Botões 	<btn> 	#276359 VERDE ESCURO
+Descrições <P> 	#276359 VERDE ESCURO
+Títulos <h>	    #276359 VERDE ESCURO
+Footer 		      #b9cdcb VERDE CLARO
+Linhas <hr>	    #b9cdcb VERDE CLARO
+Labels <forms>	#8ebba7 VERDE CLARO 2
+Border <DIV>	  #d9d9d9 CINZA CLARO
+Linhas hr Forms #f2ddcc AREIA
+ */
+
+/* how works styles */
+.howWorksBkg {
+  background-image: url(https://image.freepik.com/free-photo/closeup-two-business-men-shaking-hands_1262-3740.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

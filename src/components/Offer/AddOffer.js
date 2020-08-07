@@ -40,15 +40,15 @@ const AddOffer = () => {
   }
 
   return ( 
-    <div className="backgroundColor">
-    <h1>Cadastrar oferta</h1>
-    <hr className = "form-group"></hr>
+    <div className="titleWidth">
+    <h1 className="titleFormat">Cadastrar Oferta</h1>
+    <hr className="ml-5 mr-5" ></hr>
     <form onSubmit={handleSubmit}>
       <div className="form-group ml-5">
         <label htmlFor="nomePrato">Nome do Prato</label>
         <input
           type="text"
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           id="offerTitleField"
           name="title"
           aria-describedby="emailHelp"
@@ -59,7 +59,7 @@ const AddOffer = () => {
       <div className="form-group ml-5">
         <label htmlFor="valorPrato">Valor do Prato</label>
         <input
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           name="value"
           id="offerValueField"
           onChange={handleChange}
@@ -69,7 +69,7 @@ const AddOffer = () => {
       <div className="form-group ml-5">
       <label htmlFor="quantidadeDisp">Quantidade Disponível</label>
         <input
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           name="availableQty"
           id="offerValueField"
           onChange={handleChange}
@@ -80,7 +80,7 @@ const AddOffer = () => {
         <label htmlFor="fotoPrato">Foto do Prato</label>
         <input
           type="text"
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           id="offerPhotoField"
           name="photo"
           aria-describedby="emailHelp"
@@ -88,15 +88,20 @@ const AddOffer = () => {
           value={offer.photo}
         />
       </div>
-      <div>
-          <input type="date"/>
+      <div className="ml-5 mt-5 ">
+      <label htmlFor="fotoPrato" >Data Limite para Retirada</label>
+          <input type="date" className="ml-5"/>
         </div>
-      <button type="submit" className="btn btn-lg btn-primary">
-        Save
+        <div className=" divbtnSaveAdd ml-5 mt-5 "> 
+      <button type="submit" className="btn btn-lg rounded-pill btnSaveAdd" style={{color: "white"}}>
+        Salvar
       </button>
+      </div>
     </form>
+    <hr className="ml-5 mr-5 mt-5"></hr>
     </div>
   )
 };
 
+//datePosFormAdd mt-5 ml-5
 export default AddOffer;

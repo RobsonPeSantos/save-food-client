@@ -49,14 +49,15 @@ const EditOffer = () => {
   }
  
   return (
-    <div><h1>Editar Oferta</h1>
-    <hr className = "form-group"></hr>
+    <div  >
+    <h1 className="titleFormat">Editar Oferta</h1>
+    <hr className = "ml-5 mr-5"></hr> 
     <form onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="nomePrato">Nome do Prato (title)</label>
+      <div className="form-group ml-5">
+        <label htmlFor="nomePrato">Nome do Prato</label>
         <input
           type="text"
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           id="offerTitleField"
           name="title"
           aria-describedby="emailHelp"
@@ -64,21 +65,31 @@ const EditOffer = () => {
           value={offer.title}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="valorPrato">Valor do prato (Value)</label>
+      <div className="form-group ml-5">
+        <label htmlFor="valorPrato">Valor do prato</label>
         <input
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           name="value"
           id="offerValueField"
           onChange={handleChange}
           value={offer.value}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="fotoPrato">Foto do Prato (photo)</label>
+      <div className="form-group ml-5">
+      <label htmlFor="quantidadeDisp">Quantidade Disponível</label>
+        <input
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
+          name="availableQty"
+          id="offerValueField"
+          onChange={handleChange}
+          value={offer.availableQty}
+        />
+        </div>
+      <div className="form-group ml-5">
+        <label htmlFor="fotoPrato">Foto do Prato</label>
         <input
           type="text"
-          className="form-control form-control-lg col-5"
+          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor"
           id="offerPhotoField"
           name="photo"
           aria-describedby="emailHelp"
@@ -86,23 +97,17 @@ const EditOffer = () => {
           value={offer.photo}
         />
       </div>
-      <div className="form-group">
-      <label htmlFor="quantidadeDisp">Quantidade Disponível</label>
-        <input
-          className="form-control form-control-lg col-5"
-          name="availableQty"
-          id="offerValueField"
-          onChange={handleChange}
-          value={offer.availableQty}
-        />
+        <div className="ml-5 mt-5 ">
+      <label htmlFor="fotoPrato" >Data Limite para Retirada</label>
+          <input type="date" className="ml-5"/>
         </div>
-        <div>
-          <input type="date" />
-        </div>
-      <button type="submit" className="btn btn-lg btn-primary">
-        Save Edit
+        <div className=" divbtnSaveAdd ml-5 mt-5 ">
+      <button type="submit" className="btn btn-lg rounded-pill btnSaveAdd" style={{color: "white"}}>
+        Salvar
       </button>
+      </div>
     </form>
+    <hr className="ml-5 mr-5 mt-5"></hr>
     </div>
   );
 };
