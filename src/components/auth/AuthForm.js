@@ -31,7 +31,7 @@ const AuthForm = (props) => {
         <label htmlFor="exampleInputPassword1" className="inputLabelLogin">Password</label>
         <input
           type="password"
-          className="form-control form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor inputLogin"
+          className="form-control-md col-5 border-top-0 border-right-0 border-left-0 rounded-0 divLinesColor inputLogin"
           name="password"
           id="authPasswordField"
           onChange={handleChange}
