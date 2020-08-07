@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Form from "../navbar/Form";
 
-const styles = { width: "60rem", padding: "5px", color: "#276359" };
-const buttonStyles = { "background-color": "#276359" };
-
 const AllOffers = (props) => {
   console.log(props);
   return (
@@ -16,7 +13,10 @@ const AllOffers = (props) => {
       ></Form>
       <div className="offersBody">
         {props.offers.map((offer) => (
-          <div className="card" style={styles}>
+          <div
+            className="card"
+            style={{ width: "60rem", padding: "5px", color: "#276359" }}
+          >
             <img
               className="card-img-top"
               src={offer.photo}
@@ -28,7 +28,7 @@ const AllOffers = (props) => {
               <Link
                 type="button"
                 className="btn btn-primary"
-                style={buttonStyles}
+                style={{ backgroundColor: "#276359" }}
                 to={`offer/${offer._id}`}
               >
                 RESERVAR
