@@ -26,13 +26,10 @@ const SearchForm = (props) => {
   }
 
   return (
-    <div className="homeSearchField">
+    <div className="homeSearchField" style={{ maxWidth: 1350 }}>
       <form
-        className="form-control form-control-lg col-6 border-0"
-        style={{
-          borderRadius: 75,
-          backgroundColor: "#f0f0f0",
-        }}
+        className="form-control form-control-lg  border-0"
+        style={{ borderRadius: 75 }}
       >
         <input
           className="form-control border-0"
@@ -40,7 +37,7 @@ const SearchForm = (props) => {
           type="search"
           placeholder="Search"
           aria-label="Search"
-          style={{ backgroundColor: "#f0f0f0" }}
+          style={{ backgroundColor: "#F5F5F5" }}
         />
       </form>
 
