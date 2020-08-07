@@ -163,10 +163,9 @@ button:hover {
   width: 100vw ;
   height: 100vw;
   position: relative;
-
   background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
   background-repeat: no-repeat;
- 
+  background-size: cover;
 }
 
 .homeLogo {
@@ -184,10 +183,7 @@ button:hover {
 /* About us */
 #section-2 {
   display: flex;
-  margin-top: 50px;
-  height: 800px;
-  background-image: url(https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-  background-position-y: initial;
+  background-image: url(https://c.pxhere.com/photos/6c/b8/kitchen_chef_food_cook_restaurant-103038.jpg!d);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -196,14 +192,27 @@ button:hover {
   align-items: center;
 }
 
+#dark-background {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #section-2 h1 {
   font-size: 80px;
+  letter-spacing: 3px;
+  filter: brightness(2);
+}
+
+#section-2 h2 {
   letter-spacing: 3px;
 }
 
 #section-2 p {
   font-size: 30px;
   text-align: center;
+  padding: 5rem 15rem 5rem 15rem;
 }
 
 .modal {
@@ -290,8 +299,24 @@ Linhas hr Forms #f2ddcc AREIA
 /* how works styles */
 .howWorksBkg {
   background-image: url(https://image.freepik.com/free-photo/closeup-two-business-men-shaking-hands_1262-3740.jpg);
+  height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+}
+
+.jumbotron {
+  background-color: #b9cdcb;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10rem;
+}
+
+.jumbotron > h1 {
+  filter: brightness(2);
+}
+
+.jumbotron > p {
+  filter: brightness(2);
 }
 
 
