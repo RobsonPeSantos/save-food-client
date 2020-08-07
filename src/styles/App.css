@@ -82,6 +82,15 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
+<<<<<<< HEAD
+.establishmentEditContainer{
+  
+
+}
+
+
+=======
+>>>>>>> ef36515f500750357d281dbd5acf114765c55bee
 /* All Offers */
 
 .offersBody {
@@ -147,11 +156,29 @@ button:hover {
 
 /* Home */
 .home-background {
-  size: cover;
-  position: relative;
-  background-image: url(https://thumbs.dreamstime.com/z/fundo-saud-vel-do-alimento-dos-frutos-vegetais-cereal-das-porcas-e-superfood-vegetariano-diet-tico-equilibrado-que-come-produtos-143677456.jpg);
+ 
+  height: 800px ;
+  background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
+  background-repeat: no-repeat;
 }
 
+.homeLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+<<<<<<< HEAD
+.homeSearchField {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+=======
+>>>>>>> ef36515f500750357d281dbd5acf114765c55bee
 /* About us */
 #section-2 {
   display: flex;
