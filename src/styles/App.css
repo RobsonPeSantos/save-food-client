@@ -85,10 +85,12 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
+
 .establishmentEditContainer{
   
 
 }
+
 
 
 /* All Offers */
@@ -156,10 +158,12 @@ button:hover {
 
 /* Home */
 .home-background {
+
   
   width: 100vw ;
   height: 100vw;
   position: relative;
+
   background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
   background-repeat: no-repeat;
  
@@ -169,8 +173,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
 }
 
 .homeSearchField {
@@ -209,33 +211,32 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-
 /* General */
 h1 {
-  color: #276359
+  color: #276359;
 }
 
 label {
-  color: #276359
+  color: #276359;
 }
 
 hr {
-  color: #276359
+  color: #276359;
 }
 
 /* AddOffers Style */
 
-.divLinesColor{
+.divLinesColor {
   border-bottom-color: #f2ddcc;
 }
 
-.titleFormat{
+.titleFormat {
   padding: 1rem;
   margin-left: 2rem;
-  margin-top: 1.5rem
+  margin-top: 1.5rem;
 }
 
-.divbtnSaveAdd{
+.divbtnSaveAdd {
   padding-left: 14rem;
   color: #276359;
 }
@@ -244,8 +245,8 @@ hr {
   margin: 10rem;
 }
 
-.btnSaveAdd{
-  background-color: #276359 ;
+.btnSaveAdd {
+  background-color: #276359;
 }
 
 /* Cores:
@@ -271,7 +272,8 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* navbar */
 .navbar {
-  font-size: 1rem;
+  font-size: 1.2rem;
+
 }
 
 .navbar-div {
@@ -281,4 +283,11 @@ Linhas hr Forms #f2ddcc AREIA
   justify-content: space-between;
   align-items: stretch;
   align-content: space-around;
+}
+
+
+/* footer */
+
+.footer {
+  background-color: #b9cdcb;
 }
