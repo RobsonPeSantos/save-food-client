@@ -22,7 +22,8 @@ const Login = (props) => {
     }
   }
   return (
-    <div className="form-container" style={{border: "1rem"}}>
+    <div className="login-background">
+      <div className="form-container" style={{border: "1rem"}}>
       <div className="login-box">
       <h1 className="">Login</h1>
       <hr className="hrWidthLoginForm"></hr>
@@ -34,6 +35,7 @@ const Login = (props) => {
       />
       </div>
     
+    </div>
     </div>
 
   );
