@@ -41,7 +41,7 @@ const AddOffer = () => {
 
   return ( 
     <div className="titleWidth">
-    <h1 className="titleFormat">Cadastrar oferta</h1>
+    <h1 className="titleFormat">Cadastrar Oferta</h1>
     <hr className="ml-5 mr-5" ></hr>
     <form onSubmit={handleSubmit}>
       <div className="form-group ml-5">
@@ -94,7 +94,7 @@ const AddOffer = () => {
         </div>
         <div className=" divbtnSaveAdd ml-5 mt-5 "> 
       <button type="submit" className="btn btn-lg rounded-pill btnSaveAdd" style={{color: "white"}}>
-        Save
+        Salvar
       </button>
       </div>
     </form>
