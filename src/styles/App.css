@@ -11,8 +11,6 @@ Border <DIV>	  #d9d9d9 CINZA CLARO
 Linhas hr Forms #f2ddcc AREIA
  */
 
-
-
 /* OFFER CLASSES */
 
 .offerCard {
@@ -25,14 +23,12 @@ Linhas hr Forms #f2ddcc AREIA
   padding: 2rem;
 }
 
-
 .offerDetailsContainer {
   display: flex;
   justify-content: space-around;
   margin: 2rem;
   padding: 1rem;
 }
-
 
 .offerImg {
   display: flex;
@@ -46,11 +42,13 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* ESTABLISHMENT CLASSES */
 
-.establishmentImage img {  /* Offer details component */
+.establishmentImage img {
+  /* Offer details component */
   width: 13rem;
 }
 
-.establishmentCard {  /* Offer details component */
+.establishmentCard {
+  /* Offer details component */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,18 +57,17 @@ Linhas hr Forms #f2ddcc AREIA
   padding: 2rem;
 }
 
-.profileMenu{
+.profileMenu {
   padding: 1rem;
   margin-left: 3rem;
 }
 
 .establishmentProfileContainer {
   display: flex;
-  justify-content: flex-start ;
-  
+  justify-content: flex-start;
 }
 
-.establishmentProfile { 
+.establishmentProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,10 +80,7 @@ Linhas hr Forms #f2ddcc AREIA
 .greetingProfileContainer {
   padding: 3rem;
   margin-left: 2rem;
-
 }
-
-
 
 /* All Offers */
 
@@ -158,7 +152,6 @@ button:hover {
   background-image: url(https://thumbs.dreamstime.com/z/fundo-saud-vel-do-alimento-dos-frutos-vegetais-cereal-das-porcas-e-superfood-vegetariano-diet-tico-equilibrado-que-come-produtos-143677456.jpg);
 }
 
-
 /* About us */
 #section-2 {
   display: flex;
@@ -190,6 +183,7 @@ button:hover {
 }
 
 
+/* General */
 h1 {
   color: #276359
 }
@@ -201,6 +195,9 @@ label {
 hr {
   color: #276359
 }
+
+/* AddOffers Style */
+
 .divLinesColor{
   border-bottom-color: #f2ddcc;
 }
@@ -236,3 +233,11 @@ Labels <forms>	#8ebba7 VERDE CLARO 2
 Border <DIV>	  #d9d9d9 CINZA CLARO
 Linhas hr Forms #f2ddcc AREIA
  */
+
+/* how works styles */
+.howWorksBkg {
+  background-image: url(https://image.freepik.com/free-photo/closeup-two-business-men-shaking-hands_1262-3740.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
