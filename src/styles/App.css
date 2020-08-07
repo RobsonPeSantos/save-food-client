@@ -83,8 +83,6 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
-
-
 /* All Offers */
 
 .offersBody {
@@ -162,7 +160,10 @@ button:hover {
 .homeLogo {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  align-content: stretch;
 }
 
 .homeSearchField {
@@ -194,16 +195,18 @@ button:hover {
   font-size: 80px;
   letter-spacing: 3px;
   filter: brightness(2);
+  margin-top: 1rem;
 }
 
 #section-2 h2 {
   letter-spacing: 3px;
+  margin-bottom: 1rem;
 }
 
 #section-2 p {
   font-size: 30px;
   text-align: center;
-  padding: 5rem 15rem 5rem 15rem;
+  padding: 2rem 15rem 2rem 15rem;
 }
 
 .modal {
@@ -231,7 +234,6 @@ hr {
 }
 
 .titleFormat {
-
   padding: 1rem;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -250,19 +252,14 @@ hr {
   background-color: #276359;
 }
 
-
-
 .btnLogin {
   background-color: #276359;
 }
 
 .inputLogin {
-  
-
 }
 
 .inputLabelLogin {
-
 }
 
 .hrWidthLoginForm {
@@ -277,15 +274,12 @@ hr {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  
 }
 
 .auth-form {
- 
   display: flex;
   flex-direction: column;
- 
-  
+
   width: 100%;
 }
 
@@ -299,11 +293,7 @@ hr {
 
 .divbtnLogin {
   text-align: center;
-  
-
 }
-
-
 
 /* Cores:
 
