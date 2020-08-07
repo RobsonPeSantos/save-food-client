@@ -40,7 +40,8 @@ const OfferDetails = () => {
       try {
         const result = await offerApi.get(`/offer/${id}`);
 
-        setOffer({ ...result.data[0] });
+        setOffer({ ...result.data[0]});
+        console.log(result)
       } catch (error) {
         console.log(error);
       }
@@ -53,8 +54,9 @@ const OfferDetails = () => {
         const result = await userApi.get(
           `/establishment/profile/${offer.owner}`
         );
-
+        console.log(result)
         setUser({ ...result.data.establishment });
+        
       } catch (error) {
         console.log(error);
       }

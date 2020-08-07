@@ -4,7 +4,9 @@ import { useParams, useHistory } from "react-router-dom";
 import offersApi from "../../apis/offers";
 
 const EditOffer = () => {
+  
     const { id } = useParams();
+
     const history = useHistory();
   
     const [offer, setOffer] = useState({
@@ -27,6 +29,7 @@ const EditOffer = () => {
         (async function fetchOffer() {
           try {
             const result = await offersApi.get(`/offer/${id}`);
+            console.log(result)
     
             setOffer({ ...result.data[0] });
           } catch (error) {
@@ -40,9 +43,9 @@ const EditOffer = () => {
     
     try {
       const result = await offersApi.put(`/offer/update/${id}`, offer);
-      console.log(result)
-      history.push(`/offer/${id}`);
-      history.go();
+      console.log(offer)
+      history.push(`/establishment/profile/offers/${offer.owner}`);
+      // history.go();
     } catch (err) {
       console.error(err);
     }

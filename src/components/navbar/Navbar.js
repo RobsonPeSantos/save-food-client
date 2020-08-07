@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+
+
+const Navbar = (props) => {
   return (
     <div>
       <nav
@@ -31,7 +33,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item" style={{ marginLeft: "10rem" }}>
+            <li className="nav-item" style={{ marginLeft: "5rem" }}>
               <Link
                 className="nav-link"
                 style={{ color: "white", font: "1rem" }}
@@ -40,7 +42,7 @@ const Navbar = () => {
                 Faça parte
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "10rem" }}>
+            <li className="nav-item" style={{ marginLeft: "5rem" }}>
               <Link
                 className="nav-link"
                 style={{ color: "white" }}
@@ -49,7 +51,7 @@ const Navbar = () => {
                 Como funciona
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "10rem" }}>
+            <li className="nav-item" style={{ marginLeft: "5rem" }}>
               <Link
                 className="nav-link"
                 style={{ color: "white" }}
@@ -58,7 +60,7 @@ const Navbar = () => {
                 Quem somos
               </Link>
             </li>
-            <li className="nav-item active" style={{ marginLeft: "15rem" }}>
+            <li className="nav-item active" style={{ marginLeft: "10rem" }}>
               <Link
                 className="nav-link"
                 style={{
@@ -67,6 +69,17 @@ const Navbar = () => {
                 to="/user/login"
               >
                 Login
+              </Link>
+            </li>
+            <li className="nav-item active" style={{ marginLeft: "1rem" }}>
+              <Link
+                className="nav-link"
+                style={{
+                  color: "white",
+                }}
+                to={`/establishment/profile/${props.user.userObj._id}`}
+              >
+                Perfil
               </Link>
             </li>
           </ul>

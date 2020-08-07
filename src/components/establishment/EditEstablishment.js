@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory, Link } from "react-router-dom";
 import { useEffect } from "react";
+
+
 
 import userApi from "../../apis/users";
 
@@ -35,7 +37,15 @@ const EditEstablishment = () => {
   function handleChange(event) {
     setProfile({
       ...profile,
-      [event.currentTarget.name]: event.currentTarget.value,
+      [event.currentTarget.name]: event.currentTarget.value, 
+      address: {
+        ...profile.address, 
+        [event.currentTarget.name]: event.currentTarget.value,
+      },
+      takeawayTime: {
+        ...profile.takeawayTime,
+        [event.currentTarget.name]: event.currentTarget.value,
+      }
     });
   }
 
@@ -44,7 +54,9 @@ const EditEstablishment = () => {
       try {
         const result = await userApi.get(`/establishment/profile/${id}`);
 
-        setProfile({ ...result.data.establishment });
+        setProfile((prevState) => {
+          return { ...prevState, ...result.data.establishment }
+        });
       } catch (error) {
         console.log(error);
       }
@@ -73,6 +85,7 @@ const EditEstablishment = () => {
     <div>
       <div>
         <h2>{`Profile > Editar > ${profile.companyName}`}</h2>
+        <Link to={`/establishment/profile/${id}`}>Voltar para perfil</Link>
       </div>
 
       <hr />
@@ -145,7 +158,7 @@ const EditEstablishment = () => {
               <label htmlFor="phone">Telefone</label>
               <input
                 className="form-control form-control-lg col-5"
-                name="availableQty"
+                name="phone"
                 id="offerValueField"
                 onChange={handleChange}
                 value={profile.phone}
@@ -182,7 +195,7 @@ const EditEstablishment = () => {
                 type="text"
                 className="form-control form-control-lg col-5"
                 id="cuisineField"
-                name="photo"
+                name="cuisine"
                 aria-describedby="emailHelp"
                 onChange={handleChange}
                 value={profile.cuisine}

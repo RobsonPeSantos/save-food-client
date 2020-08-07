@@ -26,11 +26,12 @@ import offersApi from "../apis/offers";
 let backup = [];
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const [loggedInUser, setLoggedInUser] = useState({userObj: {_id: ""}});
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("loggedInUser") || '""');
     setLoggedInUser({ ...storedUser });
+    console.log(storedUser)
   }, []);
 
   const [offers, setOffers] = useState([]);
@@ -51,7 +52,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Navbar offers={offers} setOffers={setOffers}></Navbar>
+        <Navbar user={loggedInUser} offers={offers} setOffers={setOffers}></Navbar>
 
         <Switch>
           <Route
@@ -98,7 +99,7 @@ function App() {
           <Route
             path="/offer/delete/:id"
             exact
-            render={() => <DeleteOffer offers={offers} setOffers={setOffers} />}
+            render={() => <DeleteOffer user={loggedInUser} offers={offers} setOffers={setOffers} />}
           />
 
           <Route path="/offer/update/:id" component={EditOffer} />
