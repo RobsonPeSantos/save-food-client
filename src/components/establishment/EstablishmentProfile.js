@@ -44,7 +44,7 @@ const EstablishmentProfile = () => {
         <p>
           <h2>Perfil</h2>
         </p>
-        <Link to={`/establishment/profile/offers/${id}`}>Minhas Ofertas</Link>
+        <Link to={`/establishment/profile/update/${id}`}>Editar Perfil </Link> | <Link to={`/establishment/profile/offers/${id}`}>Minhas Ofertas</Link>
         <hr />
       </div>
 
@@ -55,18 +55,19 @@ const EstablishmentProfile = () => {
               src="https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg"
               alt="establishment"
             />
-            <p>{user.companyName}</p>
+            <p><strong>{user.companyName}</strong></p>
             <hr />
           </div>
 
           <div className="establishmentData">
             <p>
               {" "}
-              {user.address.street}, {user.address.number}
-              <p>{user.address.neighborhood}</p>
+              <strong>{user.address.street}, {user.address.number}</strong>
+              
+              <p><strong>{user.address.neighborhood}</strong></p>
             </p>
-            <p> {user.phone}</p>
-            <p> {user.email}</p>
+            <p> <strong>{user.phone}</strong></p>
+            <p> <strong>{user.email}</strong></p>
           </div>
         </div>
 
@@ -75,19 +76,19 @@ const EstablishmentProfile = () => {
             {" "}
             <h1>Olá, {user.companyName}! </h1>{" "}
           </p>
-          <p>Categoria: {user.category}</p>
-          <p>Cozinha: {user.cuisine}</p>
+          <p> <strong>Categoria:</strong>  {user.category}</p>
+          <p><strong>Cozinha: </strong>{user.cuisine}</p>
           <hr />
           <div className="PaymentDelivery">
             <p>
               {" "}
-              <img src="" alt="payment icon" /> {user.paymentForms}
+              <img src="https://res.cloudinary.com/savefood/image/upload/v1596771831/save-food/paymentIcon_y5smhy.png" alt="payment icon" style={{width: 50}}/> {user.paymentForms}
             </p>
             <p>
-              <img src="" alt="payment icon" /> {user.takeaway}
+              <img src="https://res.cloudinary.com/savefood/image/upload/v1596771828/save-food/takeawayDeliveryIcon_fl7lsf.png" alt="payment icon" style={{width: 40}}/> {user.takeaway}
             </p>
-            <p>
-              Horário de retirada: das {user.takeawayTime.startTime} às{" "}
+            <p><strong>Horário de retirada: </strong>
+               {user.takeawayTime.startTime} às{" "}
               {user.takeawayTime.endTime}
             </p>
           </div>
