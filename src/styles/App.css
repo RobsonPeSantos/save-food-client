@@ -83,8 +83,7 @@ Linhas hr Forms #f2ddcc AREIA
   margin-left: 2rem;
 }
 
-.establishmentEditContainer {
-}
+
 
 /* All Offers */
 
@@ -155,7 +154,7 @@ button:hover {
   width: 100vw;
   height: 40vw;
   position: relative;
-  background-image: url(https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png);
+  background-image: url("https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -175,7 +174,7 @@ button:hover {
 /* About us */
 #section-2 {
   display: flex;
-  background-image: url(https://c.pxhere.com/photos/6c/b8/kitchen_chef_food_cook_restaurant-103038.jpg!d);
+  background-image: url("https://c.pxhere.com/photos/6c/b8/kitchen_chef_food_cook_restaurant-103038.jpg!d");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -232,6 +231,7 @@ hr {
 }
 
 .titleFormat {
+
   padding: 1rem;
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -250,29 +250,60 @@ hr {
   background-color: #276359;
 }
 
-.divbtnLogin {
-  padding-left: 65rem;
-}
+
 
 .btnLogin {
   background-color: #276359;
 }
 
 .inputLogin {
-  padding-left: 30rem;
-  margin-left: 55rem;
-  width: 10rem;
+  
+
 }
 
 .inputLabelLogin {
-  padding-left: 55rem;
+
 }
 
 .hrWidthLoginForm {
-  padding-left: 21rem;
-  margin-left: 55rem;
+  /* padding-left: 21rem;
+  margin-left: 55rem; */
   width: 10rem;
 }
+
+.form-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
+
+.auth-form {
+ 
+  display: flex;
+  flex-direction: column;
+ 
+  
+  width: 100%;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 20rem;
+}
+
+.divbtnLogin {
+  text-align: center;
+  
+
+}
+
+
 
 /* Cores:
 
