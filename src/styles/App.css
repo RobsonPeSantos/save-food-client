@@ -332,7 +332,7 @@ Linhas hr Forms #f2ddcc AREIA
 }
 
 /* navbar */
-@media (min-width: 1024px) and {
+@media (min-width: 1024px) {
   nav {
     font-size: 0.5rem;
   }
@@ -363,5 +363,3 @@ Linhas hr Forms #f2ddcc AREIA
   background-size: cover;
 }
 
-.login-box {
-}
