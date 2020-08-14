@@ -47,8 +47,8 @@ const EstablishmentProfile = () => {
   }, []);
 
   return (
-    <div>
-      <div className='profileMenu'>
+    <div className="main-establishment-profile">
+      <div className="profileMenu">
         <p>
           <h2>Perfil</h2>
         </p>
@@ -57,12 +57,12 @@ const EstablishmentProfile = () => {
         <hr />
       </div>
 
-      <div className='establishmentProfileContainer'>
-        <div className='establishmentProfile'>
-          <div className='establishmentImage'>
+      <div className="establishmentProfileContainer">
+        <div className="establishmentProfile">
+          <div className="establishmentImage">
             <img
-              src='https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg'
-              alt='establishment'
+              src="https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg"
+              alt="establishment"
             />
             <p>
               <strong>{user.companyName}</strong>
@@ -70,7 +70,7 @@ const EstablishmentProfile = () => {
             <hr />
           </div>
 
-          <div className='establishmentData'>
+          <div className="establishmentData">
             <p>
               {" "}
               <strong>
@@ -91,7 +91,7 @@ const EstablishmentProfile = () => {
           </div>
         </div>
 
-        <div className='greetingProfileContainer'>
+        <div className="greetingProfileContainer">
           <p>
             {" "}
             <h1>Olá, {user.companyName}! </h1>{" "}
@@ -105,20 +105,20 @@ const EstablishmentProfile = () => {
             {user.cuisine}
           </p>
           <hr />
-          <div className='PaymentDelivery'>
+          <div className="PaymentDelivery">
             <p>
               {" "}
               <img
-                src='https://res.cloudinary.com/savefood/image/upload/v1596771831/save-food/paymentIcon_y5smhy.png'
-                alt='payment icon'
+                src="https://res.cloudinary.com/savefood/image/upload/v1596771831/save-food/paymentIcon_y5smhy.png"
+                alt="payment icon"
                 style={{ width: 50 }}
               />{" "}
               {user.paymentForms}
             </p>
             <p>
               <img
-                src='https://res.cloudinary.com/savefood/image/upload/v1596771828/save-food/takeawayDeliveryIcon_fl7lsf.png'
-                alt='payment icon'
+                src="https://res.cloudinary.com/savefood/image/upload/v1596771828/save-food/takeawayDeliveryIcon_fl7lsf.png"
+                alt="payment icon"
                 style={{ width: 40 }}
               />{" "}
               {user.takeaway}

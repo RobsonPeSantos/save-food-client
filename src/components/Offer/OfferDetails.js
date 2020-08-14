@@ -40,8 +40,8 @@ const OfferDetails = () => {
       try {
         const result = await offerApi.get(`/offer/${id}`);
 
-        setOffer({ ...result.data[0]});
-        console.log(result)
+        setOffer({ ...result.data[0] });
+        console.log(result);
       } catch (error) {
         console.log(error);
       }
@@ -54,9 +54,8 @@ const OfferDetails = () => {
         const result = await userApi.get(
           `/establishment/profile/${offer.owner}`
         );
-        console.log(result)
+        console.log(result);
         setUser({ ...result.data.establishment });
-        
       } catch (error) {
         console.log(error);
       }
@@ -64,23 +63,20 @@ const OfferDetails = () => {
   }, [offer]);
 
   return (
-    <div>
+    <div className="main-offer-details">
       <div>
         <h1>Detalhes da oferta: {offer.title}</h1>
       </div>
 
       <hr />
 
-      <div className='offerDetailsContainer'>
-        <div className='offerCard'>
-          <div className='offerImage'>
-            <img
-              src='https://img.cybercook.com.br/receitas/859/file-de-frango-a-milanesa-623x350.jpeg'
-              alt='offer'
-            />
+      <div className="offerDetailsContainer">
+        <div className="offerCard">
+          <div className="offerImage">
+            <img src={offer.photo} alt="offer" />
             <p>{offer.title}</p>
           </div>
-          <div className='offerData'>
+          <div className="offerData">
             <p>
               <strong>R$ {offer.value}</strong>
             </p>
@@ -93,17 +89,17 @@ const OfferDetails = () => {
           </div>
         </div>
 
-        <div className='establishmentCard'>
-          <div className='establishmentImage'>
+        <div className="establishmentCard">
+          <div className="establishmentImage">
             <img
-              src='https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg'
-              alt='establishment'
+              src="https://res.cloudinary.com/tf-lab/image/upload/w_656,h_368,c_fill,g_auto:subject,q_auto,f_auto/restaurant/6ab8a164-2453-4903-9e6f-10585ebf73d6/f6672791-fef1-4d0d-b659-5622c7d09780.jpg"
+              alt="establishment"
             />
 
             <p>{user.companyName}</p>
           </div>
 
-          <div className='establishmentData'>
+          <div className="establishmentData">
             <p> Cozinha: {user.cuisine}</p>
             <p>
               {" "}
@@ -115,26 +111,26 @@ const OfferDetails = () => {
             <p> {user.email}</p>
           </div>
 
-          <div className='PaymentDelivery'>
+          <div className="PaymentDelivery">
             <p>
               {" "}
-              <img src='' alt='payment icon' /> {user.paymentForms}
+              <img src={user.paymentForms} alt="payment icon" />
             </p>
             <p>
-              <img src='' alt='payment icon' /> {user.takeaway}
+              <img src={user.takeaway} alt="payment icon" />
             </p>
           </div>
         </div>
 
         <div>
           <iframe
-            width='500'
-            height='350'
-            src='https://maps.google.com/maps?width=500&amp;height=350&amp;hl=en&amp;q=Rua%20Vitor%20Bastos%2027%20campolide%20lisboa%20+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed'
-            frameBorder='0'
-            scrolling='no'
-            marginHeight='0'
-            marginWidth='0'
+            width="500"
+            height="350"
+            src="https://maps.google.com/maps?width=500&amp;height=350&amp;hl=en&amp;q=Rua%20Vitor%20Bastos%2027%20campolide%20lisboa%20+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
           ></iframe>
 
           {/* <iframe

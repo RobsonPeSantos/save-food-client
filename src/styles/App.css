@@ -423,7 +423,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 62.8rem;
+  height: 37rem;
 }
 
 .divbtnLogin {
@@ -513,4 +513,12 @@ Linhas hr Forms #f2ddcc AREIA
   justify-content: center;
   align-items: center;
   align-content: stretch;
+}
+
+.main-offer-details {
+  height: 36.5rem;
+}
+
+.main-establishment-profile {
+  height: 36.5rem;
 }
