@@ -19,7 +19,128 @@ Linhas hr Forms #f2ddcc AREIA
   align-items: center;
   justify-content: space-between;
   width: 15rem;
-  border: 2px solid #276359;
+  border: 1px solid white;
+}
+@media (max-width: 1440px) {
+  .card-body {
+    background: #b9cdcb;
+    height: 9rem;
+    width: 28.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
+
+  .btn {
+    width: 8rem;
+    align-self: center;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-body {
+    background: #b9cdcb;
+    height: 9rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
+
+  .btn {
+    width: 7rem;
+    align-self: center;
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    background: #b9cdcb;
+    height: 13rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
+
+  .btn {
+    width: 6rem;
+    align-self: center;
+    font-size: 0.7rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-body {
+    background: #b9cdcb;
+    height: 15rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
+
+  .btn {
+    width: 6rem;
+    align-self: center;
+    font-size: 0.7rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-body {
+    background: #b9cdcb;
+    height: 15rem;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
+  .btn {
+    width: 4rem;
+    align-self: center;
+    font-size: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.5rem;
+  }
+}
+
+.external-body {
+  border: 1px solid white;
 }
 
 .offerDetailsContainer {
@@ -92,6 +213,7 @@ Linhas hr Forms #f2ddcc AREIA
   color: #276359;
   display: flex;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -375,7 +497,6 @@ Linhas hr Forms #f2ddcc AREIA
   background-size: cover;
 }
 
-
 .input-group {
   width: 20rem;
   height: 1.8rem;
@@ -391,5 +512,3 @@ Linhas hr Forms #f2ddcc AREIA
   align-items: center;
   align-content: stretch;
 }
-
-
