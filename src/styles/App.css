@@ -358,15 +358,18 @@ Linhas hr Forms #f2ddcc AREIA
   background-size: cover;
 }
 
-/* form */
-.form-control {
-  width: 18rem;
+.input-group {
+  width: 20rem;
   height: 1.8rem;
-  border-radius: 75px;
+  display: flex;
 }
 
-.btn-form {
-  width: 5rem;
-  text-align: center;
-  padding-top: 0.2rem;
+.main-form {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }

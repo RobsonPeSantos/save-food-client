@@ -26,30 +26,37 @@ const SearchForm = (props) => {
   }
 
   return (
-    <div className="homeSearchField">
-      <form>
+    <div className="main-form">
+      <div className="input-group mb-3">
         <input
-          className="form-control"
-          onKeyUp={filterOffers}
           type="search"
+          className="form-control"
           placeholder="Search"
           aria-label="Search"
-          style={{ backgroundColor: "#F5F5F5" }}
+          aria-describedby="basic-addon2"
+          onKeyUp={filterOffers}
+          style={{ backgroundColor: "#F5F5F5", borderLeftRadius: 50 }}
         />
-      </form>
-
-      <Link
-        to="/offers"
-        className="btn-form btn-success"
-        style={{
-          background: "#276359",
-          borderColor: "#276359",
-          borderRadius: 50,
-          fontSize: "1rem",
-        }}
-      >
-        Buscar
-      </Link>
+        <div className="input-group-append">
+          <button
+            className="btn btn-outline-secondary"
+            type="button"
+            style={{
+              background: "#276359",
+              borderColor: "#276359",
+              borderRightRadius: 50,
+            }}
+          >
+            <Link
+              to="/offers"
+              style={{ textDecoration: "none", color: "white" }}
+              onKeyUp={filterOffers}
+            >
+              Buscar
+            </Link>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
