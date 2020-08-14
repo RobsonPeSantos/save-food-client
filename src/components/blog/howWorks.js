@@ -41,7 +41,7 @@ const HowWorks = () => {
         <p class="lead">
           <Link
             class="btn btn-primary btn-lg"
-            style={{ backgroundColor: "#276359", border: "#276359" }}
+            style={{ backgroundColor: "#276359", border: "#276359", width:"19rem" }}
             href="#"
             role="button"
             to="/user/signup"
