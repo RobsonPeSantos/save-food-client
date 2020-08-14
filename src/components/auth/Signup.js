@@ -23,17 +23,18 @@ const Signup = () => {
   }
 
   return (
-    <div className="form-container" style={{border: "1rem"}}>
-    <div className="login-box"></div>
+    <div className="form-container-signup" style={{border: "1rem"}}>
+    <div className="signup-box">
       <h1>Signup</h1>
-      <hr className="hrWidthLoginForm" ></hr>
+      <hr className="hrWidthLoginForm" />
       <AuthForm
         handleSubmit={handleSubmit}
         setUser={setUser}
         user={user}
         buttonText="Sign up"
       />
-      <div >
+      </div>
+      <div>
         <img src="https://res.cloudinary.com/savefood/image/upload/v1596761593/save-food/SignupBG.png" alt="" style={{width: 150, margin: 10}} />
         </div>
     </div>

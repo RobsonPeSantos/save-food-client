@@ -282,7 +282,24 @@ hr {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  width: 20rem;
+  width: 32rem;
+}
+
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 32rem;
+  
+}
+
+.form-container-signup {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .divbtnLogin {
