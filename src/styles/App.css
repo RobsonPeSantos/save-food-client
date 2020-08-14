@@ -149,12 +149,11 @@ button:hover {
 
 /* Home */
 .home-background {
-  width: 100vw;
-  height: 40vw;
   /* position: relative; */
   background-image: url("https://res.cloudinary.com/savefood/image/upload/v1596760352/save-food/HomeBG_tcujck.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 46.8rem;
 }
 
 .homeLogo {
@@ -163,13 +162,14 @@ button:hover {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  padding: 4rem;
   /* align-content: stretch; */
 }
 
 .homeSearchField {
   display: flex;
   justify-content: center;
-  padding: 4rem;
+  padding-top: 8rem;
 }
 
 /* About us */
@@ -254,12 +254,6 @@ hr {
 
 .btnLogin {
   background-color: #276359;
-}
-
-.inputLogin {
-}
-
-.inputLabelLogin {
 }
 
 .hrWidthLoginForm {
@@ -349,8 +343,9 @@ Linhas hr Forms #f2ddcc AREIA
 
 /* footer */
 
-.footer {
+.page-footer {
   background-color: #b9cdcb;
+  height: 9rem;
 }
 
 .login-background {
@@ -362,4 +357,22 @@ Linhas hr Forms #f2ddcc AREIA
   position: relative;
   background-size: cover;
 }
+
+
+.input-group {
+  width: 20rem;
+  height: 1.8rem;
+  display: flex;
+}
+
+.main-form {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
 

@@ -15,11 +15,11 @@ const Home = (props) => {
           <img
             src="https://res.cloudinary.com/savefood/image/upload/v1596761593/save-food/LogoGrafismo_vdfqst.png"
             alt=""
-            style={{ width: "10rem", margin: "1rem" }}
+            style={{ width: "6rem", margin: "1rem" }}
           />
         </div>
         <div>
-          <h1 style={{ color: "white", fontSize: 50 }}>
+          <h1 style={{ color: "white", fontSize: "2rem" }}>
             Porque comida não se joga fora
           </h1>
         </div>

@@ -26,12 +26,12 @@ import offersApi from "../apis/offers";
 let backup = [];
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({userObj: {_id: ""}});
+  const [loggedInUser, setLoggedInUser] = useState({ userObj: { _id: "" } });
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("loggedInUser") || '""');
     setLoggedInUser({ ...storedUser });
-    console.log(storedUser)
+    console.log(storedUser);
   }, []);
 
   const [offers, setOffers] = useState([]);
@@ -52,7 +52,11 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Navbar user={loggedInUser} offers={offers} setOffers={setOffers}></Navbar>
+        <Navbar
+          user={loggedInUser}
+          offers={offers}
+          setOffers={setOffers}
+        ></Navbar>
 
         <Switch>
           <Route
@@ -99,7 +103,13 @@ function App() {
           <Route
             path="/offer/delete/:id"
             exact
-            render={() => <DeleteOffer user={loggedInUser} offers={offers} setOffers={setOffers} />}
+            render={() => (
+              <DeleteOffer
+                user={loggedInUser}
+                offers={offers}
+                setOffers={setOffers}
+              />
+            )}
           />
 
           <Route path="/offer/update/:id" component={EditOffer} />
@@ -127,8 +137,8 @@ function App() {
             component={EstablishmentOffers}
           />
         </Switch>
-        <Footer offers={offers} setOffers={setOffers}></Footer>
       </div>
+      <Footer offers={offers} setOffers={setOffers}></Footer>
     </BrowserRouter>
   );
 }
