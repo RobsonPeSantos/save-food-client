@@ -390,6 +390,7 @@ hr {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-top: 6rem;
 }
 
 .auth-form {
@@ -404,7 +405,7 @@ hr {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  width: 32rem;
+  width: 35rem;
 }
 
 .signup-box {
@@ -413,6 +414,7 @@ hr {
   align-items: center;
   padding: 2rem;
   width: 32rem;
+  background-color: whitesmoke;
 }
 
 .form-container-signup {
@@ -489,12 +491,12 @@ Linhas hr Forms #f2ddcc AREIA
 
 .login-background {
   width: 100vw;
-  height: 40vw;
+  height: 62.8rem;
   /* position: relative; */
   background-image: url("https://res.cloudinary.com/savefood/image/upload/v1596818065/save-food/LoginBackground_stl5p6.png");
   background-repeat: no-repeat;
   position: relative;
-  background-size: cover;
+  background-size: auto auto;
 }
 
 .input-group {
