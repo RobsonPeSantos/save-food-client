@@ -4,13 +4,13 @@ const AboutUs = () => {
   return (
     <div id="section-2">
       <div id="dark-background">
-        <h1>Sobre nós</h1>
-        <p>
+        <h1 style={{fontSize: "4.6rem"}}>Sobre nós</h1>
+        <p className="font-size-p-AboutUs" style={{fontSize: "1.3rem"}}>
           Somos um grupo formado para desenvolver aplicações inteligentes que
           melhorem a vida dos usuários, trazendo soluções inteligentes para o
           dia-a-dia.
         </p>
-        <h2>Reduzir o desperdício</h2>
+        <h2 style={{fontSize: "2.3rem"}}>Reduzir o desperdício</h2>
         <div class="embed-responsive embed-responsive-21by9">
           <iframe
             width="560"
@@ -19,10 +19,10 @@ const AboutUs = () => {
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          />
         </div>
 
-        <p>
+        <p style={{fontSize: "1.3rem"}}>
           A Organização das Nações Unidas para a Alimentação e a Agricultura
           (FAO) divulgou que 1,3 bilhão de toneladas de alimentos são perdidos
           no planeta a cada ano, cerca de 30% do total produzido. No Brasil, os
@@ -34,7 +34,7 @@ const AboutUs = () => {
           desperdício ocorre no final da cadeia alimentar (varejo e consumo), e
           estaria mais associado às nações desenvolvidas.
         </p>
-        <p>
+        <p style={{fontSize: "1.3rem"}}>
           Enquanto isso, com a situação financeira do país debilitada, muitos
           consumidores procuram por soluções para adquirir alimentos de
           qualidade mais baratos, enquanto os comerciantes buscam reduzir seu
