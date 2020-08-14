@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 const Navbar = (props) => {
   return (
     <div>
@@ -33,28 +31,28 @@ const Navbar = (props) => {
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item" style={{ marginLeft: "5rem" }}>
+            <li className="nav-item" style={{ marginLeft: "4rem" }}>
               <Link
                 className="nav-link"
-                style={{ color: "white", font: "1rem" }}
+                style={{ color: "white", fontSize: "1rem" }}
                 to="/user/signup"
               >
                 Faça parte
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "5rem" }}>
+            <li className="nav-item" style={{ marginLeft: "4rem" }}>
               <Link
                 className="nav-link"
-                style={{ color: "white" }}
+                style={{ color: "white", fontSize: "1rem" }}
                 to="/blog/howWorks"
               >
                 Como funciona
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "5rem" }}>
+            <li className="nav-item" style={{ marginLeft: "4rem" }}>
               <Link
                 className="nav-link"
-                style={{ color: "white" }}
+                style={{ color: "white", fontSize: "1rem" }}
                 to="/blog/aboutUs"
               >
                 Quem somos
@@ -65,6 +63,7 @@ const Navbar = (props) => {
                 className="nav-link"
                 style={{
                   color: "white",
+                  fontSize: "1rem",
                 }}
                 to="/user/login"
               >
@@ -76,6 +75,7 @@ const Navbar = (props) => {
                 className="nav-link"
                 style={{
                   color: "white",
+                  fontSize: "1rem",
                 }}
                 to={`/establishment/profile/${props.user.userObj._id}`}
               >

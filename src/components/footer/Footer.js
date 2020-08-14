@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer
-      class="page-footer font-small blue pt-4"
+      class="page-footer font-small blue pt-3"
       style={{ backgroundColor: "#b9cdcb", color: "white" }}
     >
       <div

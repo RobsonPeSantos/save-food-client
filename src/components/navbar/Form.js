@@ -26,13 +26,10 @@ const SearchForm = (props) => {
   }
 
   return (
-    <div className="homeSearchField" style={{ maxWidth: 1350 }}>
-      <form
-        className="form-control form-control-lg  border-0"
-        style={{ borderRadius: 75 }}
-      >
+    <div className="homeSearchField">
+      <form>
         <input
-          className="form-control border-0"
+          className="form-control"
           onKeyUp={filterOffers}
           type="search"
           placeholder="Search"
@@ -43,12 +40,12 @@ const SearchForm = (props) => {
 
       <Link
         to="/offers"
-        className="btn btn-success ml-2 "
+        className="btn-form btn-success"
         style={{
           background: "#276359",
           borderColor: "#276359",
           borderRadius: 50,
-          paddingTop: 12,
+          fontSize: "1rem",
         }}
       >
         Buscar
